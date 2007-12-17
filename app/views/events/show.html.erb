@@ -1,0 +1,39 @@
+<h1><%= @event.event_date.to_finnish %></h1>
+
+<div id="info">
+  <dl>
+    <dt>
+      Lämpötila
+    </dt>
+    <dd>
+      <%= @event.temperature %>°C
+    </dd>
+    
+    <dt>
+      Olosuhteet
+    </dt>
+    <dd>
+      <%= @event.weather %>
+    </dd>
+  </dl>
+</div>
+
+<div id="results">
+  <% [15200, 7600, 3600].each do |length| %>
+    <% unless @results[length].blank? %>
+    <h2>
+      <%= length %> m
+    </h2>
+
+    <table>
+      <% @results[length].each_with_index do |result, i| %>
+      <tr>
+        <td><%= i + 1 %></td>
+        <td><%=h result.runner.name %></td>
+        <td><%=h result.result(7600) %></td>
+      </tr>
+      <% end %>
+    </table>
+    <% end %>
+  <% end %>
+</div>
