@@ -1,11 +1,15 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-describe EventsController, "successful show" do
+describe EventsController, "show" do
   before(:each) do
-    @event = mock_model(Event)
+    @event = mock_model(Event, :event_date => Date.today)
     Event.stub!(:find_by_event_date).and_return(@event)
     @results = []
     @event.stub!(:all_results).and_return(@results)
+    
+    @tt = mock("TwentyThree")
+    TwentyThree.stub!(:new).and_return(@tt)
+    @tt.stub!(:photos).and_return([])
   end
   
   def do_get
@@ -36,6 +40,10 @@ describe EventsController, "successful show" do
   end
   
   describe "when event not found" do
+    before(:each) do
+      Event.stub!(:find_by_event_date).and_return(nil)
+    end
+    
     it "should return 404" do
       do_get
       response.response_code.should == 404

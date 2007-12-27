@@ -14,4 +14,13 @@ class Event < ActiveRecord::Base
   def to_param
     event_date.to_s
   end
+  
+  def title
+    event_date.to_finnish
+  end
+  
+  def temperature_with_sign
+    return nil if temperature.blank?
+    temperature < 0 ? temperature.to_s : "+#{temperature}"
+  end
 end

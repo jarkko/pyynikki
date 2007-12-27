@@ -1,0 +1,39 @@
+<h1><%=h @runner.name %></h1>
+
+<div id="records">
+  <h2>
+    Ennätykset
+  </h2>
+  
+  <table>
+    <% if @runner.record_run(15200) %>
+    <tr>
+      <td>15,2 km</td>
+      <td><%= @runner.record_time(15200) %></td>
+      <td><%= link_to @runner.record_run(15200).event.event_date.to_finnish,
+              event_path(@runner.record_run(15200).event,
+                         :anchor => "run_#{@runner.record_run(15200).to_param}") %></td>
+    </tr>
+    <% end %>
+    
+    <% if @runner.record_run(7600) %>
+    <tr>
+      <td>7,6 km</td>
+      <td><%= @runner.record_time(7600) %></td>
+      <td><%= link_to @runner.record_run(7600).event.event_date.to_finnish,
+              event_path(@runner.record_run(7600).event,
+                         :anchor => "run_#{@runner.record_run(7600).to_param}") %></td>
+    </tr>
+    <% end %>
+    
+    <% if @runner.record_run(3600) %>
+    <tr>
+      <td>3,6 km</td>
+      <td><%= @runner.record_time(3600) %></td>
+      <td><%= link_to @runner.record_run(3600).event.event_date.to_finnish,
+              event_path(@runner.record_run(3600).event,
+                         :anchor => "run_#{@runner.record_run(3600).to_param}") %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>

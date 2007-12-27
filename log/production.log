@@ -1,0 +1,835 @@
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:20:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:20:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+
+
+Mysql::Error (Unknown database 'pyynikki_production'):
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/mysql_adapter.rb:471:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/mysql_adapter.rb:471:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/mysql_adapter.rb:165:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/mysql_adapter.rb:88:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/mysql_adapter.rb:88:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:291:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:291:in `connection='
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:259:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:155:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:20:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering events/show
+Completed in 28.39369 (0 reqs/sec) | Rendering: 28.00274 (98%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:47:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering events/show
+Completed in 0.30339 (3 reqs/sec) | Rendering: 0.01070 (3%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:50:14) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering events/show
+Completed in 0.24313 (4 reqs/sec) | Rendering: 0.00538 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:51:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering events/show
+Completed in 0.20937 (4 reqs/sec) | Rendering: 0.00643 (3%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:51:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering events/show
+Completed in 0.23315 (4 reqs/sec) | Rendering: 0.00548 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:52:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering events/show
+Completed in 0.22833 (4 reqs/sec) | Rendering: 0.00611 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:52:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+
+
+NoMethodError (private method `gsub' called for 10:Fixnum):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/cgi.rb:342:in `escape'
+    /lib/flickr.rb:75:in `request_url'
+    /lib/flickr.rb:75:in `each_key'
+    /lib/flickr.rb:75:in `request_url'
+    /lib/flickr.rb:66:in `request'
+    /lib/flickr.rb:145:in `method_missing'
+    /lib/flickr.rb:103:in `photos'
+    /app/controllers/events_controller.rb:10:in `show'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1168:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1168:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:155:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:53:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering events/show
+Completed in 0.22503 (4 reqs/sec) | Rendering: 0.00914 (4%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:53:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering events/show
+Completed in 0.18174 (5 reqs/sec) | Rendering: 0.00399 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:53:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering events/show
+Completed in 0.17844 (5 reqs/sec) | Rendering: 0.00407 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:54:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering events/show
+Completed in 0.27145 (3 reqs/sec) | Rendering: 0.06934 (25%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 21:54:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering events/show
+Completed in 0.18103 (5 reqs/sec) | Rendering: 0.00362 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 22:40:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.28495 (3 reqs/sec) | Rendering: 0.07634 (26%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 22:40:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.18639 (5 reqs/sec) | Rendering: 0.00409 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 22:40:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.20076 (4 reqs/sec) | Rendering: 0.00498 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 22:40:40) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.20056 (4 reqs/sec) | Rendering: 0.00377 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 22:40:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.18492 (5 reqs/sec) | Rendering: 0.00377 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 22:40:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-04-01", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.16620 (6 reqs/sec) | Rendering: 0.00269 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-04-01]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 22:40:51) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.18944 (5 reqs/sec) | Rendering: 0.00436 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 22:49:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.19499 (5 reqs/sec) | Rendering: 0.00391 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-17 22:51:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.20826 (4 reqs/sec) | Rendering: 0.00465 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:15:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1.12348 (0 reqs/sec) | Rendering: 0.13902 (12%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:16:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.25407 (3 reqs/sec) | Rendering: 0.00392 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:16:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.22445 (4 reqs/sec) | Rendering: 0.00370 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:17:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.21020 (4 reqs/sec) | Rendering: 0.00349 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:17:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.29767 (3 reqs/sec) | Rendering: 0.00394 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:18:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.25403 (3 reqs/sec) | Rendering: 0.00427 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:18:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.72728 (1 reqs/sec) | Rendering: 0.00417 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:19:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.22175 (4 reqs/sec) | Rendering: 0.00513 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:20:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.28671 (3 reqs/sec) | Rendering: 0.00394 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2007-12-18 10:21:11) [GET]
+  Session ID: 974f9599c3832d5b9e57cdb490aeca09
+  Parameters: {"action"=>"index", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/index
+Completed in 0.08687 (11 reqs/sec) | Rendering: 0.05231 (60%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:21:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.18449 (5 reqs/sec) | Rendering: 0.00420 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:33:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+
+
+ActionView::TemplateError (undefined method `temperature_with_sign' for #<Event:0x23a0654>) on line #10 of events/show.html.erb:
+7:       Lämpötila
+8:     </dt>
+9:     <dd>
+10:       <%= @event.temperature_with_sign %>°C
+11:     </dd>
+12:     <% end %>
+13:     
+
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/attribute_methods.rb:205:in `method_missing'
+    app/views/events/show.html.erb:10:in `_run_erb_47app47views47events47show46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_view/base.rb:390:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_view/base.rb:390:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_view/base.rb:366:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1110:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/layout.rb:261:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1163:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1169:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:155:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:33:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.34257 (2 reqs/sec) | Rendering: 0.07421 (21%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:42:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+
+
+Timeout::Error (execution expired):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:54:in `rbuf_fill'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:56:in `timeout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:76:in `timeout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:132:in `rbuf_fill'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:116:in `readuntil'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:126:in `readline'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2029:in `read_status_line'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2018:in `read_new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1059:in `request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:957:in `request_get'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:380:in `get_response'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:547:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:379:in `get_response'
+    /lib/flickr.rb:83:in `http_get'
+    /lib/flickr.rb:66:in `request'
+    /lib/flickr.rb:145:in `method_missing'
+    /lib/flickr.rb:103:in `photos'
+    /app/controllers/events_controller.rb:14:in `show'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1168:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1168:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:155:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:52:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.20306 (4 reqs/sec) | Rendering: 0.01320 (6%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:53:40) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 43.25580 (0 reqs/sec) | Rendering: 0.00677 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:55:22) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+
+
+Timeout::Error (execution expired):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:54:in `rbuf_fill'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:56:in `timeout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:76:in `timeout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:132:in `rbuf_fill'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:116:in `readuntil'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:126:in `readline'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2029:in `read_status_line'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2018:in `read_new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1059:in `request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:957:in `request_get'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:380:in `get_response'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:547:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:379:in `get_response'
+    /lib/flickr.rb:83:in `http_get'
+    /lib/flickr.rb:66:in `request'
+    /lib/flickr.rb:145:in `method_missing'
+    /lib/flickr.rb:103:in `photos'
+    /app/controllers/events_controller.rb:14:in `show'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1168:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1168:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:155:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:58:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.62328 (1 reqs/sec) | Rendering: 0.01132 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:58:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.29034 (3 reqs/sec) | Rendering: 0.00346 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:59:15) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.51131 (1 reqs/sec) | Rendering: 0.01096 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:59:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.38747 (2 reqs/sec) | Rendering: 0.00381 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:59:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.75329 (1 reqs/sec) | Rendering: 0.01212 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 10:59:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1.02796 (0 reqs/sec) | Rendering: 0.00349 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:00:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 2.22356 (0 reqs/sec) | Rendering: 0.01113 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:01:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 1.87585 (0 reqs/sec) | Rendering: 0.00349 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:01:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.38066 (2 reqs/sec) | Rendering: 0.01003 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:01:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.53179 (1 reqs/sec) | Rendering: 0.00411 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:01:58) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.42375 (2 reqs/sec) | Rendering: 0.02210 (5%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:02:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.45531 (2 reqs/sec) | Rendering: 0.01145 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:02:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.83612 (1 reqs/sec) | Rendering: 0.00391 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:02:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.25154 (3 reqs/sec) | Rendering: 0.01226 (4%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:02:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.22748 (4 reqs/sec) | Rendering: 0.00370 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:02:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.26672 (3 reqs/sec) | Rendering: 0.00389 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:03:22) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.23272 (4 reqs/sec) | Rendering: 0.01099 (4%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:03:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.32296 (3 reqs/sec) | Rendering: 0.00384 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:03:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 2.13367 (0 reqs/sec) | Rendering: 0.00395 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:03:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.33608 (2 reqs/sec) | Rendering: 0.00383 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:03:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.47862 (2 reqs/sec) | Rendering: 0.10191 (21%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:04:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.27448 (3 reqs/sec) | Rendering: 0.00492 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2007-12-18 11:04:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.19571 (5 reqs/sec) | Rendering: 0.00376 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/events/2006-12-16]

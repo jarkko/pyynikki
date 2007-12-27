@@ -2,30 +2,36 @@ class Run < ActiveRecord::Base
   belongs_to :runner
   belongs_to :event
   
+  validates_presence_of :runner_id, :event_id
+  validates_associated :runner, :event
+  
   def self.find_short(opts = {})
     find(:all,
          {:conditions => {:time7600 => nil,
                          :time11200 => nil,
                          :time15200 => nil},
-         :order => "time3600"}.merge(opts))
+          :order => "time3600",
+          :include => :runner}.merge(opts))
   end
   
   def self.find_one_lap(opts = {})
     find(:all, 
          {:conditions => "time7600 is not null and time15200 is null",
-         :order => "time7600"}.merge(opts))
+          :order => "time7600"  ,
+          :include => :runner}.merge(opts))
   end
   
   def self.find_long(opts = {})
     find(:all, {:conditions => "time15200 is not null",
-         :order => "time15200"}.merge(opts))
+         :order => "time15200",
+         :include => :runner}.merge(opts))
   end
   
-  def self.find_results_for(length, *args)
+  def self.find_results_for(length, opts = {})
     methods = {7600 => "one_lap",
                15200 => "long",
                3600 => "short"}
-    send("find_" + methods[length], args)
+    send("find_" + methods[length], opts)
   end
   
   def result(split)
@@ -67,6 +73,18 @@ class Run < ActiveRecord::Base
     end
   end
   
+  def splits
+    case latest_split
+    when 15200
+      splits = [result(3600), result(7600), result(11200)].compact
+      splits.empty? ? "" : "(#{splits.join(", ")})"
+    when 7600
+      result(3600) ? "(#{result(3600)})" : ""
+    else
+      ""
+    end      
+  end
+  
   private
   
     def formatted_result(time)
@@ -74,5 +92,12 @@ class Run < ActiveRecord::Base
       seconds = time % 60
 
       sprintf("%02d:%02d", minutes, seconds)
+    end
+    
+    def latest_split
+      [15200, 7600, 3600].each do |length|
+        return length if send("time#{length}")
+      end
+      return nil
     end
 end

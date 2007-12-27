@@ -23,13 +23,27 @@ describe Event, "all_results" do
   end
 end
 
-describe Event, "to_param" do
+describe Event do
   before(:each) do
     @event = Event.new
     @event.event_date = "20071124"
+    @event.temperature = 2
   end
   
-  it "should return date" do
-    @event.to_param.should == "2007-11-24"
+  describe "to_param" do
+    it "should return date" do
+      @event.to_param.should == "2007-11-24"
+    end
+  end
+  
+  describe "temperature_with_sign" do
+    it "should return temperature with plus sign when greater than zero" do
+      @event.temperature_with_sign.should == "+2"
+    end
+    
+    it "should return temperature with minus sign when less than zero" do
+      @event.temperature = -5
+      @event.temperature_with_sign.should == "-5"
+    end
   end
 end

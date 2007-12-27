@@ -2,19 +2,21 @@
 
 <div id="info">
   <dl>
+    <% if @event.temperature %>
     <dt>
       Lämpötila
     </dt>
-    <dd>
-      <%= @event.temperature %>°C
-    </dd>
+    <%= temperature(@event) %>
+    <% end %>
     
+    <% if @event.weather %>
     <dt>
       Olosuhteet
     </dt>
     <dd>
       <%= @event.weather %>
     </dd>
+    <% end %>
   </dl>
 </div>
 
@@ -27,13 +29,22 @@
 
     <table>
       <% @results[length].each_with_index do |result, i| %>
-      <tr>
+      <tr id="run_<%= result.to_param %>">
         <td><%= i + 1 %></td>
-        <td><%=h result.runner.name %></td>
-        <td><%=h result.result(7600) %></td>
+        <td><%= link_to h(result.runner.name), runner_path(result.runner) %></td>
+        <td class="result"><%=h result.result(length) %></td>
+        <td class="splits"><%=h result.splits %></td>
       </tr>
       <% end %>
     </table>
     <% end %>
   <% end %>
 </div>
+
+<ul id="photos">
+  <% @photos.each do |photo| %>
+  <li>
+    <%= link_to image_tag(photo.tt_source('Square')), photo.tt_url %>
+  </li>
+  <% end %>
+</ul>

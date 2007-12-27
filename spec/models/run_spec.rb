@@ -1,12 +1,33 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
 describe Run do
-  before(:each) do
-    @run = Run.new
+  def valid_attributes
+    @runnerguy = mock_model(Runner, :age_class_with_gender => "H21", :valid? => true)
+    @event = mock_model(Event, :event_date => Date.today, :valid? => true)
+    {:event_id => 69, :runner_id => 69}
   end
+  
+  [:runner_id, :event_id].each do |field|
+    describe "without #{field}" do
+      before(:each) do
+        @run = Run.new(valid_attributes.except(field))
+      end
+      
+      it "should not be valid" do
+        @run.should_not be_valid
+      end
+    end
+    
+  end
+  
+  describe "with valid attributes" do
+    before(:each) do
+      @run = Run.new(valid_attributes)
+    end
 
-  it "should be valid" do
-    @run.should be_valid
+    it "should be valid" do
+      @run.should be_valid
+    end
   end
 end
 
@@ -18,7 +39,8 @@ describe Run, "custom finders" do
                                             {:time7600 => nil,
                                              :time11200 => nil,
                                              :time15200 => nil},
-                                     :order => "time3600")
+                                     :order => "time3600",
+                                     :include => :runner)
       Run.find_short                                       
     end
   end
@@ -27,7 +49,8 @@ describe Run, "custom finders" do
     it "should find runs where 15200 spli is nil" do
       Run.should_receive(:find).with(:all, :conditions => 
                           "time7600 is not null and time15200 is null",
-                                            :order => "time7600")
+                                            :order => "time7600",
+                                            :include => :runner)
       Run.find_one_lap              
     end
   end
@@ -36,7 +59,8 @@ describe Run, "custom finders" do
     it "should find runs where 15200 split is not nil" do
       Run.should_receive(:find).with(:all, 
             :conditions => "time15200 is not null",
-            :order => "time15200")
+            :order => "time15200",
+            :include => :runner)
       Run.find_long
     end
   end
@@ -164,6 +188,64 @@ describe Run do
     describe "when no such method" do
       it "should return nil" do
         @run.record(9000).should be_nil
+      end
+    end
+  end
+  
+  describe "splits" do    
+    before(:each) do
+      @run.stub!(:time7600).and_return(720)
+      @run.stub!(:time15200).and_return(3650)
+      @run.stub!(:result).with(3600).and_return("12:50")
+      @run.stub!(:result).with(7600).and_return("26:03")
+      @run.stub!(:result).with(11200).and_return("40:20")
+    end
+    
+    describe "for 1 lap run" do
+      before(:each) do
+        @run.stub!(:time15200).and_return(nil)
+      end
+      
+      it "should return 3600 m split" do
+        @run.splits.should == "(12:50)"
+      end
+      
+      describe "when 3600 m split is nil" do
+        before(:each) do
+          @run.stub!(:result).with(3600).and_return(nil)
+        end
+        
+        it "should return empty string" do
+          @run.splits.should == ""
+        end
+      end
+    end
+    
+    describe "for 3600m run" do
+      before(:each) do
+        @run.stub!(:time15200).and_return(nil)
+        @run.stub!(:time7600).and_return(nil)
+      end
+      
+      it "should return empty string" do
+        @run.splits.should == ""
+      end
+    end
+    
+    describe "for 2 lap run" do
+      it "should return all splits" do
+        @run.splits.should == "(12:50, 26:03, 40:20)"
+      end
+      
+      describe "when no splits" do
+        before(:each) do
+          @run.stub!(:result).with(11200).and_return(nil)
+          @run.stub!(:result).with(7600).and_return(nil)
+          @run.stub!(:result).with(3600).and_return(nil)
+        end
+        it "should return empty string" do
+          @run.splits.should == ""
+        end
       end
     end
   end

@@ -33,6 +33,7 @@ CREATE TABLE `runs` (
   `outsider` tinyint(1) default '0',
   `created_at` datetime default NULL,
   `updated_at` datetime default NULL,
+  `age_class` varchar(255) default NULL,
   PRIMARY KEY  (`id`),
   KEY `index_runs_on_runner_id` (`runner_id`),
   KEY `index_runs_on_event_id` (`event_id`)
@@ -42,4 +43,4 @@ CREATE TABLE `schema_info` (
   `version` int(11) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `schema_info` (version) VALUES (3)
+INSERT INTO `schema_info` (version) VALUES (4)

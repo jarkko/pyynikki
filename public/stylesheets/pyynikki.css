@@ -1,0 +1,74 @@
+/* TYPOGRAPHY */
+body {
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  color: #333;
+  font-size: 0.8em;
+  background-color: #fefefe;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  border-bottom: dotted 1px #E48F34;
+}
+
+a:hover {
+  border-bottom: 1px solid #FFBB79;
+  background-color: #FFBB79;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+  margin-bottom: 0.5em;
+}
+
+img {
+  border: 0;
+}
+
+#info .minus {
+  color: #1220FF;
+}
+
+#info .plus {
+  color: #FF071D;
+}
+
+/* result tables */
+
+.splits {
+  color: #999;
+}
+
+.highlight {
+  background-color: #FCFF8B;
+}
+
+
+/* LAYOUT */
+#contents {
+  min-width: 500px;
+  position: relative;
+}
+
+#photos {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  list-style: none; 
+}
+
+#results {
+  position: absolute;
+  left: 200px;
+  top: 0;
+  margin-right: 150px;
+}
+
+#info {
+  width: 170px;
+}

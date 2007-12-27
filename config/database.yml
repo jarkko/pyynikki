@@ -34,9 +34,4 @@ test:
   socket: /tmp/mysql.sock
 
 production:
-  adapter: mysql
-  encoding: utf8
-  database: pyynikki_production
-  username: root
-  password: 
-  socket: /tmp/mysql.sock
+  development

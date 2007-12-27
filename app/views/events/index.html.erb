@@ -1,2 +1,14 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
+<h1>Testijuoksut</h1>
+
+<% for year in @years %>
+<h2>
+  <%= year %>
+</h2>
+<ul>
+  <% for event in @events[year] %>
+  <li>
+    <%= link_to event.title, event %>
+  </li>
+  <% end %>
+</ul>
+<% end %>
