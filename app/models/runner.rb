@@ -29,6 +29,8 @@ class Runner < ActiveRecord::Base
     "#{first_name} #{last_name}"
   end
   
+  alias_method :title, :name
+  
   def age(at = Time.now)
     at.year - birth_year
   end
@@ -59,5 +61,5 @@ class Runner < ActiveRecord::Base
   
   def to_param
     "#{id}-#{name.strip.downcase.gsub(/\s/, "-").gsub(/[^\w\-]/, "")}"
-  end
+  end  
 end

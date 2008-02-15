@@ -8,7 +8,21 @@ class ApplicationController < ActionController::Base
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => 'df6609ba6896ed0f525725d20c34712b'
   
+  before_filter :init_breadcrumbs, :add_controller_specific_breadcrumb
+  
   def not_found
     render :text => "Not found", :status => 404
+  end
+  
+  private
+  
+  def init_breadcrumbs
+    @breadcrumbs = [{:url => root_path, :title => "Pyynikin testijuoksu"}]
+  end
+  
+  def add_controller_specific_breadcrumb
+    @titles = {"events" => "Testijuoksut", "runners" => "Juoksijat"}
+    @breadcrumbs << {:url => send(params[:controller] + "_path"),
+                     :title => @titles[params[:controller]]}
   end
 end

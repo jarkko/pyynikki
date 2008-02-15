@@ -36,4 +36,14 @@ Spec::Runner.configure do |config|
   # config.mock_with :mocha
   # config.mock_with :flexmock
   # config.mock_with :rr
+  
+  def mock_runner(opts = {})
+    mock_model(Runner, valid_runner_attributes.merge(opts))
+  end
+  
+  def valid_runner_attributes
+    {:name => "Pekka Itävuo",
+     :first_name => "Pekka",
+     :last_name => "Itävuo"}
+  end
 end

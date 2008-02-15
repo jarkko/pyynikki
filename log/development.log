@@ -13283,3 +13283,863 @@ Rendering runners/show
   [4;36;1mEvent Load (0.000658)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 111) [0m
   [4;35;1mEvent Load (0.000252)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 117) [0m
 Completed in 0.28540 (3 reqs/sec) | Rendering: 0.01315 (4%) | DB: 0.26279 (92%) | 200 OK [http://localhost/runners/13-antti-kaunisto]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 16:09:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"229-timo-saarinen", "controller"=>"runners"}
+  [4;36;1mSQL (0.000354)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000099)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRunner Columns (0.028219)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRunner Load (0.000578)[0m   [0mSELECT * FROM `runners` WHERE (`runners`.`id` = 229) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;36;1mRun Load (0.000662)[0m   [0;1mSELECT * FROM `runs` WHERE (runs.runner_id = 229) [0m
+  [4;35;1mRun Columns (0.002258)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mEvent Columns (0.005855)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.000481)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 122) [0m
+  [4;36;1mEvent Load (0.000598)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 119) [0m
+Completed in 0.13102 (7 reqs/sec) | Rendering: 0.06005 (45%) | DB: 0.03910 (29%) | 200 OK [http://localhost/runners/229-timo-saarinen]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 16:20:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"229-timo-saarinen", "controller"=>"runners"}
+  [4;35;1mRunner Columns (0.074016)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRunner Load (0.002079)[0m   [0;1mSELECT * FROM `runners` WHERE (`runners`.`id` = 229) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;35;1mRun Load (0.043472)[0m   [0mSELECT * FROM `runs` WHERE (runs.runner_id = 229) [0m
+  [4;36;1mRun Columns (0.008771)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mEvent Columns (0.040994)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.001282)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 122) [0m
+  [4;35;1mEvent Load (0.001048)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 119) [0m
+Completed in 0.20579 (4 reqs/sec) | Rendering: 0.02326 (11%) | DB: 0.17166 (83%) | 200 OK [http://localhost/runners/229-timo-saarinen]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 16:28:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"229-timo-saarinen", "controller"=>"runners"}
+  [4;36;1mRunner Columns (0.076879)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRunner Load (0.000553)[0m   [0mSELECT * FROM `runners` WHERE (`runners`.`id` = 229) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;36;1mRun Load (0.000869)[0m   [0;1mSELECT * FROM `runs` WHERE (runs.runner_id = 229) [0m
+  [4;35;1mRun Columns (0.002766)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mEvent Columns (0.026823)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.000552)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 122) [0m
+  [4;36;1mEvent Load (0.000384)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 119) [0m
+Completed in 0.30979 (3 reqs/sec) | Rendering: 0.01972 (6%) | DB: 0.10883 (35%) | 200 OK [http://localhost/runners/229-timo-saarinen]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 16:28:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-03-17", "controller"=>"events"}
+  [4;35;1mEvent Columns (0.002221)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.000399)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`event_date` = '2007-03-17') LIMIT 1[0m
+  [4;35;1mRun Columns (0.002608)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mRunner Columns (0.001993)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRun Load Including Associations (0.000782)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;36;1mRun Load Including Associations (0.001078)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;35;1mRun Load Including Associations (0.000793)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=2007-03-18&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=2007-03-17, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.28430 (3 reqs/sec) | Rendering: 0.01133 (3%) | DB: 0.00987 (3%) | 200 OK [http://localhost/events/2007-03-17]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 16:28:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"37-hannu-saarijärvi", "controller"=>"runners"}
+  [4;36;1mRunner Columns (0.002036)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRunner Load (0.000345)[0m   [0mSELECT * FROM `runners` WHERE (`runners`.`id` = 37) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;36;1mRun Load (0.000635)[0m   [0;1mSELECT * FROM `runs` WHERE (runs.runner_id = 37) [0m
+  [4;35;1mRun Columns (0.002127)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mEvent Columns (0.001969)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.000710)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 119) [0m
+  [4;36;1mEvent Load (0.000323)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 123) [0m
+Completed in 0.03840 (26 reqs/sec) | Rendering: 0.02113 (55%) | DB: 0.00814 (21%) | 200 OK [http://localhost/runners/37-hannu-saarij%C3%A4rvi]
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 22:17:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+Rendering template within layouts/application
+Rendering runners/index
+Completed in 0.00447 (223 reqs/sec) | Rendering: 0.00185 (41%) | DB: 0.00000 (0%) | 200 OK [http://localhost/runners]
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 22:36:39) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+Rendering template within layouts/application
+Rendering runners/index
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #6 of runners/index.html.erb:
+3: </h1>
+4: 
+5: <ul>
+6:   <% for runner in @runners %>
+7:   <li id="runner_<%= runner.id %>">
+8:     <%= runner.name %>
+9:   </li>
+
+    app/views/runners/index.html.erb:6:in `_run_erb_47app47views47runners47index46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_view/base.rb:390:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_view/base.rb:390:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_view/base.rb:366:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1110:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/layout.rb:261:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1163:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1169:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:155:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 22:46:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+  [4;35;1mRunner Load (0.115357)[0m   [0mSELECT * FROM `runners` ORDER BY last_name, first_name[0m
+Rendering template within layouts/application
+Rendering runners/index
+  [4;36;1mRunner Columns (0.004823)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+Completed in 0.14945 (6 reqs/sec) | Rendering: 0.01003 (6%) | DB: 0.12018 (80%) | 200 OK [http://localhost/runners]
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 22:48:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+  [4;35;1mRunner Load (0.210277)[0m   [0mSELECT * FROM `runners` ORDER BY last_name, first_name[0m
+Rendering template within layouts/application
+Rendering runners/index
+  [4;36;1mRunner Columns (0.002430)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+Completed in 0.26322 (3 reqs/sec) | Rendering: 0.03409 (12%) | DB: 0.21271 (80%) | 200 OK [http://localhost/runners]
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 22:50:51) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+  [4;35;1mRunner Load (0.052846)[0m   [0mSELECT * FROM `runners` ORDER BY last_name, first_name[0m
+Rendering template within layouts/application
+Rendering runners/index
+  [4;36;1mRunner Columns (0.005502)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+Completed in 0.11061 (9 reqs/sec) | Rendering: 0.03115 (28%) | DB: 0.05835 (52%) | 200 OK [http://localhost/runners]
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 22:50:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+  [4;35;1mRunner Load (0.007560)[0m   [0mSELECT * FROM `runners` ORDER BY last_name, first_name[0m
+Rendering template within layouts/application
+Rendering runners/index
+  [4;36;1mRunner Columns (0.010448)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+Completed in 0.06330 (15 reqs/sec) | Rendering: 0.02927 (46%) | DB: 0.01801 (28%) | 200 OK [http://localhost/runners]
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 22:50:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+  [4;35;1mRunner Load (0.008402)[0m   [0mSELECT * FROM `runners` ORDER BY last_name, first_name[0m
+Rendering template within layouts/application
+Rendering runners/index
+  [4;36;1mRunner Columns (0.004224)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+Completed in 0.05816 (17 reqs/sec) | Rendering: 0.03281 (56%) | DB: 0.01263 (21%) | 200 OK [http://localhost/runners]
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 22:54:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+  [4;35;1mRunner Load (0.006880)[0m   [0mSELECT * FROM `runners` ORDER BY last_name, first_name[0m
+Rendering template within layouts/application
+Rendering runners/index
+  [4;36;1mRunner Columns (0.002954)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+Completed in 0.05032 (19 reqs/sec) | Rendering: 0.01839 (36%) | DB: 0.00983 (19%) | 200 OK [http://localhost/runners]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 22:54:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"167-pekka-ahonen", "controller"=>"runners"}
+  [4;35;1mRunner Columns (0.002072)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRunner Load (0.000321)[0m   [0;1mSELECT * FROM `runners` WHERE (`runners`.`id` = 167) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;35;1mRun Load (0.248456)[0m   [0mSELECT * FROM `runs` WHERE (runs.runner_id = 167) [0m
+  [4;36;1mRun Columns (0.006055)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mEvent Columns (0.041423)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.004969)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 41) [0m
+  [4;35;1mEvent Load (0.000551)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 33) [0m
+Completed in 0.34359 (2 reqs/sec) | Rendering: 0.02841 (8%) | DB: 0.30385 (88%) | 200 OK [http://localhost/runners/167-pekka-ahonen]
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 23:05:37) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+  [4;36;1mRunner Load (0.107322)[0m   [0;1mSELECT * FROM `runners` ORDER BY last_name, first_name[0m
+  [4;35;1mRunner Columns (0.004706)[0m   [0mSHOW FIELDS FROM `runners`[0m
+Rendering template within layouts/application
+Rendering runners/index
+
+
+ActionView::TemplateError (undefined method `name' for #<Array:0x253aaf0>) on line #8 of runners/index.html.erb:
+5: <ul>
+6:   <% for runner in @runners %>
+7:   <li id="runner_<%= runner.id %>">
+8:     <%= link_to(runner.name, runner_path(runner)) %>
+9:   </li>
+10:   <% end %>
+11: </ul>
+    app/views/runners/index.html.erb:8:in `_run_erb_47app47views47runners47index46html46erb'
+    app/views/runners/index.html.erb:6:in `each'
+    app/views/runners/index.html.erb:6:in `_run_erb_47app47views47runners47index46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_view/base.rb:390:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_view/base.rb:390:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_view/base.rb:366:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1110:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/layout.rb:261:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1163:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:1169:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.1/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:155:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:154:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel.rb:264:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.1/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.1/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.1/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 23:13:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+  [4;36;1mRunner Load (0.008612)[0m   [0;1mSELECT * FROM `runners` ORDER BY last_name, first_name[0m
+  [4;35;1mRunner Columns (0.005450)[0m   [0mSHOW FIELDS FROM `runners`[0m
+Rendering template within layouts/application
+Rendering runners/index
+Completed in 0.27538 (3 reqs/sec) | Rendering: 0.02933 (10%) | DB: 0.01406 (5%) | 200 OK [http://localhost/runners]
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 23:13:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+  [4;36;1mRunner Load (0.005682)[0m   [0;1mSELECT * FROM `runners` ORDER BY last_name, first_name[0m
+  [4;35;1mRunner Columns (0.005655)[0m   [0mSHOW FIELDS FROM `runners`[0m
+Rendering template within layouts/application
+Rendering runners/index
+Completed in 0.05092 (19 reqs/sec) | Rendering: 0.01761 (34%) | DB: 0.01134 (22%) | 200 OK [http://localhost/runners]
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 23:15:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+  [4;36;1mRunner Load (0.033288)[0m   [0;1mSELECT * FROM `runners` ORDER BY last_name, first_name[0m
+  [4;35;1mRunner Columns (0.004580)[0m   [0mSHOW FIELDS FROM `runners`[0m
+Rendering template within layouts/application
+Rendering runners/index
+Completed in 0.09423 (10 reqs/sec) | Rendering: 0.02168 (23%) | DB: 0.03787 (40%) | 200 OK [http://localhost/runners]
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 23:15:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+  [4;36;1mRunner Load (0.011545)[0m   [0;1mSELECT * FROM `runners` ORDER BY last_name, first_name[0m
+  [4;35;1mRunner Columns (0.015992)[0m   [0mSHOW FIELDS FROM `runners`[0m
+Rendering template within layouts/application
+Rendering runners/index
+Completed in 0.08224 (12 reqs/sec) | Rendering: 0.02934 (35%) | DB: 0.02754 (33%) | 200 OK [http://localhost/runners]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 23:15:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"208-severi-eerola", "controller"=>"runners"}
+  [4;36;1mRunner Columns (0.001802)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRunner Load (0.003168)[0m   [0mSELECT * FROM `runners` WHERE (`runners`.`id` = 208) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;36;1mRun Load (0.104690)[0m   [0;1mSELECT * FROM `runs` WHERE (runs.runner_id = 208) [0m
+  [4;35;1mRun Columns (0.002115)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mEvent Columns (0.225036)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.003922)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 48) [0m
+  [4;36;1mEvent Load (0.000481)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 58) [0m
+  [4;35;1mEvent Load (0.000403)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 13) [0m
+Completed in 0.37890 (2 reqs/sec) | Rendering: 0.02606 (6%) | DB: 0.34162 (90%) | 200 OK [http://localhost/runners/208-severi-eerola]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:16:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"1995-04-11", "controller"=>"events"}
+  [4;36;1mEvent Columns (0.002320)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.001177)[0m   [0mSELECT * FROM `events` WHERE (`events`.`event_date` = '1995-04-11') LIMIT 1[0m
+  [4;36;1mRun Columns (0.002867)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mRunner Columns (0.003000)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRun Load Including Associations (0.027322)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 48) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;35;1mRun Load Including Associations (0.001893)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 48) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;36;1mRun Load Including Associations (0.000799)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 48) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=1995-04-12&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=1995-04-11, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 2.43035 (0 reqs/sec) | Rendering: 0.00766 (0%) | DB: 0.03938 (1%) | 200 OK [http://localhost/events/1995-04-11]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:16:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"1998-03-28", "controller"=>"events"}
+  [4;35;1mEvent Columns (0.003430)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.000862)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`event_date` = '1998-03-28') LIMIT 1[0m
+  [4;35;1mRun Columns (0.002524)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mRunner Columns (0.001615)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRun Load Including Associations (0.003085)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 58) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;36;1mRun Load Including Associations (0.001051)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 58) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;35;1mRun Load Including Associations (0.000747)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 58) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=1998-03-29&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=1998-03-28, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.64760 (1 reqs/sec) | Rendering: 0.00830 (1%) | DB: 0.01331 (2%) | 200 OK [http://localhost/events/1998-03-28]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:16:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"1995-04-11", "controller"=>"events"}
+  [4;36;1mEvent Columns (0.003478)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.000425)[0m   [0mSELECT * FROM `events` WHERE (`events`.`event_date` = '1995-04-11') LIMIT 1[0m
+  [4;36;1mRun Columns (0.002492)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mRunner Columns (0.002723)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRun Load Including Associations (0.005355)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 48) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;35;1mRun Load Including Associations (0.002119)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 48) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;36;1mRun Load Including Associations (0.000813)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 48) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=1995-04-12&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=1995-04-11, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.27152 (3 reqs/sec) | Rendering: 0.00832 (3%) | DB: 0.01741 (6%) | 200 OK [http://localhost/events/1995-04-11]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:16:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"1990-12-30", "controller"=>"events"}
+  [4;35;1mEvent Columns (0.011443)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.005644)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`event_date` = '1990-12-30') LIMIT 1[0m
+  [4;35;1mRun Columns (0.002767)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mRunner Columns (0.163622)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRun Load Including Associations (0.000922)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 13) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;36;1mRun Load Including Associations (0.002134)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 13) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;35;1mRun Load Including Associations (0.001498)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 13) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=1990-12-31&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=1990-12-30, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.43885 (2 reqs/sec) | Rendering: 0.00866 (1%) | DB: 0.18803 (42%) | 200 OK [http://localhost/events/1990-12-30]
+
+
+Processing RunnersController#index (for 127.0.0.1 at 2008-02-15 23:16:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"runners"}
+  [4;36;1mRunner Load (0.041012)[0m   [0;1mSELECT * FROM `runners` ORDER BY last_name, first_name[0m
+  [4;35;1mRunner Columns (0.248849)[0m   [0mSHOW FIELDS FROM `runners`[0m
+Rendering template within layouts/application
+Rendering runners/index
+Completed in 0.34216 (2 reqs/sec) | Rendering: 0.01853 (5%) | DB: 0.28986 (84%) | 200 OK [http://localhost/runners]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2008-02-15 23:17:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"events"}
+  [4;36;1mEvent Load (0.001611)[0m   [0;1mSELECT * FROM `events` ORDER BY event_date desc[0m
+  [4;35;1mEvent Columns (0.003001)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 0.10324 (9 reqs/sec) | Rendering: 0.05121 (49%) | DB: 0.00461 (4%) | 200 OK [http://localhost/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2008-02-15 23:17:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"events"}
+  [4;36;1mEvent Load (0.000970)[0m   [0;1mSELECT * FROM `events` ORDER BY event_date desc[0m
+  [4;35;1mEvent Columns (0.002337)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 0.06017 (16 reqs/sec) | Rendering: 0.02169 (36%) | DB: 0.00331 (5%) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2008-02-15 23:18:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"events"}
+  [4;36;1mEvent Load (0.000937)[0m   [0;1mSELECT * FROM `events` ORDER BY event_date desc[0m
+  [4;35;1mEvent Columns (0.175222)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 0.27195 (3 reqs/sec) | Rendering: 0.05301 (19%) | DB: 0.17616 (64%) | 200 OK [http://localhost/]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:18:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-02-17", "controller"=>"events"}
+  [4;36;1mEvent Columns (0.011908)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.000608)[0m   [0mSELECT * FROM `events` WHERE (`events`.`event_date` = '2007-02-17') LIMIT 1[0m
+  [4;36;1mRun Columns (0.002281)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mRunner Columns (0.005461)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRun Load Including Associations (0.002145)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 121) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;35;1mRun Load Including Associations (0.008618)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 121) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;36;1mRun Load Including Associations (0.000836)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 121) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=2007-02-18&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=2007-02-17, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.23667 (4 reqs/sec) | Rendering: 0.00824 (3%) | DB: 0.03186 (13%) | 200 OK [http://localhost/events/2007-02-17]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 23:18:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"142-mikko-haikonen", "controller"=>"runners"}
+  [4;35;1mRunner Columns (0.002129)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRunner Load (0.000392)[0m   [0;1mSELECT * FROM `runners` WHERE (`runners`.`id` = 142) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;35;1mRun Load (0.001344)[0m   [0mSELECT * FROM `runs` WHERE (runs.runner_id = 142) [0m
+  [4;36;1mRun Columns (0.004058)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mEvent Columns (0.003195)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.000700)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 118) [0m
+  [4;35;1mEvent Load (0.000617)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 121) [0m
+Completed in 0.04129 (24 reqs/sec) | Rendering: 0.01983 (48%) | DB: 0.01243 (30%) | 200 OK [http://localhost/runners/142-mikko-haikonen]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2008-02-15 23:18:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"events"}
+  [4;36;1mEvent Load (0.002797)[0m   [0;1mSELECT * FROM `events` ORDER BY event_date desc[0m
+  [4;35;1mEvent Columns (0.007527)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 0.08725 (11 reqs/sec) | Rendering: 0.03687 (42%) | DB: 0.01032 (11%) | 200 OK [http://localhost/]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:18:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-03-29", "controller"=>"events"}
+  [4;36;1mEvent Columns (0.002582)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.000620)[0m   [0mSELECT * FROM `events` WHERE (`events`.`event_date` = '2007-03-29') LIMIT 1[0m
+  [4;36;1mRun Columns (0.177605)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mRunner Columns (0.002536)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRun Load Including Associations (0.000961)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 123) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;35;1mRun Load Including Associations (0.001112)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 123) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;36;1mRun Load Including Associations (0.001252)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 123) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=2007-03-30&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=2007-03-29, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.42507 (2 reqs/sec) | Rendering: 0.00781 (1%) | DB: 0.18667 (43%) | 200 OK [http://localhost/events/2007-03-29]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:18:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-03-17", "controller"=>"events"}
+  [4;35;1mEvent Columns (0.005918)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.003685)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`event_date` = '2007-03-17') LIMIT 1[0m
+  [4;35;1mRun Columns (0.007356)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mRunner Columns (0.003914)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRun Load Including Associations (0.008955)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;36;1mRun Load Including Associations (0.002013)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;35;1mRun Load Including Associations (0.002181)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=2007-03-18&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=2007-03-17, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.35148 (2 reqs/sec) | Rendering: 0.00812 (2%) | DB: 0.03402 (9%) | 200 OK [http://localhost/events/2007-03-17]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:19:01) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-01-27", "controller"=>"events"}
+  [4;36;1mEvent Columns (0.002684)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.000432)[0m   [0mSELECT * FROM `events` WHERE (`events`.`event_date` = '2007-01-27') LIMIT 1[0m
+  [4;36;1mRun Columns (0.002262)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mRunner Columns (0.010249)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRun Load Including Associations (0.000823)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 120) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;35;1mRun Load Including Associations (0.000984)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 120) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;36;1mRun Load Including Associations (0.001253)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 120) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=2007-01-28&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=2007-01-27, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.20787 (4 reqs/sec) | Rendering: 0.01049 (5%) | DB: 0.01869 (8%) | 200 OK [http://localhost/events/2007-01-27]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 23:19:06) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"67-jarkko-laine", "controller"=>"runners"}
+  [4;35;1mRunner Columns (0.211561)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRunner Load (0.000967)[0m   [0;1mSELECT * FROM `runners` WHERE (`runners`.`id` = 67) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;35;1mRun Load (0.000551)[0m   [0mSELECT * FROM `runs` WHERE (runs.runner_id = 67) [0m
+  [4;36;1mRun Columns (0.005713)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mEvent Columns (0.007338)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.000417)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 118) [0m
+  [4;35;1mEvent Load (0.000337)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 120) [0m
+  [4;36;1mEvent Load (0.000370)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 113) [0m
+Completed in 0.40362 (2 reqs/sec) | Rendering: 0.15793 (39%) | DB: 0.22725 (56%) | 200 OK [http://localhost/runners/67-jarkko-laine]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:19:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+  [4;35;1mEvent Columns (0.006771)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.001191)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`event_date` = '2006-12-16') LIMIT 1[0m
+  [4;35;1mRun Columns (0.003468)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mRunner Columns (0.002495)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRun Load Including Associations (0.001303)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 118) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;36;1mRun Load Including Associations (0.002565)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 118) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;35;1mRun Load Including Associations (0.000908)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 118) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=2006-12-17&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=2006-12-16, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.25160 (3 reqs/sec) | Rendering: 0.01211 (4%) | DB: 0.01870 (7%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 23:19:18) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"67-jarkko-laine", "controller"=>"runners"}
+  [4;36;1mRunner Columns (0.002504)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRunner Load (0.000399)[0m   [0mSELECT * FROM `runners` WHERE (`runners`.`id` = 67) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;36;1mRun Load (0.000455)[0m   [0;1mSELECT * FROM `runs` WHERE (runs.runner_id = 67) [0m
+  [4;35;1mRun Columns (0.004397)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mEvent Columns (0.004278)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.001357)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 118) [0m
+  [4;36;1mEvent Load (0.000340)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 120) [0m
+  [4;35;1mEvent Load (0.001772)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 113) [0m
+Completed in 0.05248 (19 reqs/sec) | Rendering: 0.02613 (49%) | DB: 0.01550 (29%) | 200 OK [http://localhost/runners/67-jarkko-laine]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:19:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-12-16", "controller"=>"events"}
+  [4;36;1mEvent Columns (0.002015)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.001118)[0m   [0mSELECT * FROM `events` WHERE (`events`.`event_date` = '2006-12-16') LIMIT 1[0m
+  [4;36;1mRun Columns (0.004903)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mRunner Columns (0.003393)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRun Load Including Associations (0.001410)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 118) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;35;1mRun Load Including Associations (0.001191)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 118) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;36;1mRun Load Including Associations (0.008832)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 118) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=2006-12-17&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=2006-12-16, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.25994 (3 reqs/sec) | Rendering: 0.01217 (4%) | DB: 0.02286 (8%) | 200 OK [http://localhost/events/2006-12-16]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2008-02-15 23:19:37) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"events"}
+  [4;35;1mEvent Load (0.001507)[0m   [0mSELECT * FROM `events` ORDER BY event_date desc[0m
+  [4;36;1mEvent Columns (0.165552)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 0.33273 (3 reqs/sec) | Rendering: 0.02388 (7%) | DB: 0.16706 (50%) | 200 OK [http://localhost/]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:19:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2006-02-11", "controller"=>"events"}
+  [4;35;1mEvent Columns (0.003508)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.001251)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`event_date` = '2006-02-11') LIMIT 1[0m
+  [4;35;1mRun Columns (0.005486)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mRunner Columns (0.002761)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRun Load Including Associations (0.005073)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 112) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;36;1mRun Load Including Associations (0.004274)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 112) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;35;1mRun Load Including Associations (0.001019)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 112) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=2006-02-12&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=2006-02-11, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.29404 (3 reqs/sec) | Rendering: 0.00990 (3%) | DB: 0.02337 (7%) | 200 OK [http://localhost/events/2006-02-11]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 23:24:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"239-valtteri-repo", "controller"=>"runners"}
+  [4;36;1mRunner Columns (0.064341)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRunner Load (0.000315)[0m   [0mSELECT * FROM `runners` WHERE (`runners`.`id` = 239) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;36;1mRun Load (0.000565)[0m   [0;1mSELECT * FROM `runs` WHERE (runs.runner_id = 239) [0m
+  [4;35;1mRun Columns (0.005224)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mEvent Columns (0.002216)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.000991)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 122) [0m
+  [4;36;1mEvent Load (0.000314)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 110) [0m
+Completed in 0.09925 (10 reqs/sec) | Rendering: 0.01676 (16%) | DB: 0.07397 (74%) | 200 OK [http://localhost/runners/239-valtteri-repo]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 23:24:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"191-saana-vahvelainen", "controller"=>"runners"}
+  [4;35;1mRunner Columns (0.006232)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRunner Load (0.004526)[0m   [0;1mSELECT * FROM `runners` WHERE (`runners`.`id` = 191) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;35;1mRun Load (0.003292)[0m   [0mSELECT * FROM `runs` WHERE (runs.runner_id = 191) [0m
+  [4;36;1mRun Columns (0.003675)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mEvent Columns (0.002920)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.001486)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 112) [0m
+  [4;35;1mEvent Load (0.000379)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 119) [0m
+Completed in 0.05075 (19 reqs/sec) | Rendering: 0.01659 (32%) | DB: 0.02251 (44%) | 200 OK [http://localhost/runners/191-saana-vahvelainen]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2008-02-15 23:24:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"events"}
+  [4;36;1mEvent Load (0.003076)[0m   [0;1mSELECT * FROM `events` ORDER BY event_date desc[0m
+  [4;35;1mEvent Columns (0.160822)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 0.34954 (2 reqs/sec) | Rendering: 0.03977 (11%) | DB: 0.16390 (46%) | 200 OK [http://localhost/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2008-02-15 23:27:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"events"}
+  [4;36;1mEvent Load (0.004507)[0m   [0;1mSELECT * FROM `events` ORDER BY event_date desc[0m
+  [4;35;1mEvent Columns (0.003930)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 0.11410 (8 reqs/sec) | Rendering: 0.04314 (37%) | DB: 0.00844 (7%) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:27:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-11-24", "controller"=>"events"}
+  [4;36;1mEvent Columns (0.002092)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.000514)[0m   [0mSELECT * FROM `events` WHERE (`events`.`event_date` = '2007-11-24') LIMIT 1[0m
+  [4;36;1mRun Columns (0.002581)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mRunner Columns (0.002949)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRun Load Including Associations (0.001876)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 124) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;35;1mRun Load Including Associations (0.001556)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 124) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;36;1mRun Load Including Associations (0.000789)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 124) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=2007-11-25&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=2007-11-24, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.30434 (3 reqs/sec) | Rendering: 0.01001 (3%) | DB: 0.01236 (4%) | 200 OK [http://localhost/events/2007-11-24]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2008-02-15 23:27:06) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"index", "controller"=>"events"}
+  [4;35;1mEvent Load (0.003229)[0m   [0mSELECT * FROM `events` ORDER BY event_date desc[0m
+  [4;36;1mEvent Columns (0.002468)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 0.09355 (10 reqs/sec) | Rendering: 0.04040 (43%) | DB: 0.00570 (6%) | 200 OK [http://localhost/]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:27:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-03-17", "controller"=>"events"}
+  [4;35;1mEvent Columns (0.002179)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.001675)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`event_date` = '2007-03-17') LIMIT 1[0m
+  [4;35;1mRun Columns (0.002286)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mRunner Columns (0.001935)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRun Load Including Associations (0.000657)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;36;1mRun Load Including Associations (0.000756)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;35;1mRun Load Including Associations (0.000819)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=2007-03-18&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=2007-03-17, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.28655 (3 reqs/sec) | Rendering: 0.00801 (2%) | DB: 0.01031 (3%) | 200 OK [http://localhost/events/2007-03-17]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 23:27:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"185-riina-kuuselo", "controller"=>"runners"}
+  [4;36;1mRunner Columns (0.007591)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRunner Load (0.169643)[0m   [0mSELECT * FROM `runners` WHERE (`runners`.`id` = 185) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;36;1mRun Load (0.011514)[0m   [0;1mSELECT * FROM `runs` WHERE (runs.runner_id = 185) [0m
+  [4;35;1mRun Columns (0.004805)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mEvent Columns (0.002977)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.003524)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 111) [0m
+  [4;36;1mEvent Load (0.004706)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 123) [0m
+  [4;35;1mEvent Load (0.004140)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 114) [0m
+Completed in 0.24574 (4 reqs/sec) | Rendering: 0.02399 (9%) | DB: 0.20890 (85%) | 200 OK [http://localhost/runners/185-riina-kuuselo]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 23:27:28) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"229-timo-saarinen", "controller"=>"runners"}
+  [4;36;1mRunner Columns (0.217228)[0m   [0;1mSHOW FIELDS FROM `runners`[0m
+  [4;35;1mRunner Load (0.000963)[0m   [0mSELECT * FROM `runners` WHERE (`runners`.`id` = 229) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;36;1mRun Load (0.000717)[0m   [0;1mSELECT * FROM `runs` WHERE (runs.runner_id = 229) [0m
+  [4;35;1mRun Columns (0.010593)[0m   [0mSHOW FIELDS FROM `runs`[0m
+  [4;36;1mEvent Columns (0.002634)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.000542)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 122) [0m
+  [4;36;1mEvent Load (0.000383)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 119) [0m
+Completed in 0.27453 (3 reqs/sec) | Rendering: 0.02062 (7%) | DB: 0.23306 (84%) | 200 OK [http://localhost/runners/229-timo-saarinen]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 23:27:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"229-timo-saarinen", "controller"=>"runners"}
+  [4;35;1mRunner Columns (0.004163)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRunner Load (0.000578)[0m   [0;1mSELECT * FROM `runners` WHERE (`runners`.`id` = 229) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;35;1mRun Load (0.000513)[0m   [0mSELECT * FROM `runs` WHERE (runs.runner_id = 229) [0m
+  [4;36;1mRun Columns (0.001925)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mEvent Columns (0.002177)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.000374)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 122) [0m
+  [4;35;1mEvent Load (0.000323)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 119) [0m
+Completed in 0.04379 (22 reqs/sec) | Rendering: 0.01810 (41%) | DB: 0.01005 (22%) | 200 OK [http://localhost/runners/229-timo-saarinen]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:27:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-03-17", "controller"=>"events"}
+  [4;36;1mEvent Columns (0.002548)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.001375)[0m   [0mSELECT * FROM `events` WHERE (`events`.`event_date` = '2007-03-17') LIMIT 1[0m
+  [4;36;1mRun Columns (0.006972)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mRunner Columns (0.156863)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRun Load Including Associations (0.000958)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;35;1mRun Load Including Associations (0.001988)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;36;1mRun Load Including Associations (0.002235)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=2007-03-18&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=2007-03-17, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.48094 (2 reqs/sec) | Rendering: 0.01256 (2%) | DB: 0.17294 (35%) | 200 OK [http://localhost/events/2007-03-17]
+
+
+Processing RunnersController#show (for 127.0.0.1 at 2008-02-15 23:27:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"209-severi-kymäläinen", "controller"=>"runners"}
+  [4;35;1mRunner Columns (0.004337)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRunner Load (0.007936)[0m   [0;1mSELECT * FROM `runners` WHERE (`runners`.`id` = 209) [0m
+Rendering template within layouts/application
+Rendering runners/show
+  [4;35;1mRun Load (0.000866)[0m   [0mSELECT * FROM `runs` WHERE (runs.runner_id = 209) [0m
+  [4;36;1mRun Columns (0.010585)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mEvent Columns (0.013051)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.001123)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 123) [0m
+  [4;35;1mEvent Load (0.000603)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 122) [0m
+Completed in 0.30671 (3 reqs/sec) | Rendering: 0.24388 (79%) | DB: 0.03850 (12%) | 200 OK [http://localhost/runners/209-severi-kym%C3%A4l%C3%A4inen]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2008-02-15 23:28:01) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--66237dffb1172b28b8e9c59c83891755768e338f
+  Parameters: {"action"=>"show", "id"=>"2007-03-17", "controller"=>"events"}
+  [4;36;1mEvent Columns (0.002261)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.002682)[0m   [0mSELECT * FROM `events` WHERE (`events`.`event_date` = '2007-03-17') LIMIT 1[0m
+  [4;36;1mRun Columns (0.007123)[0m   [0;1mSHOW FIELDS FROM `runs`[0m
+  [4;35;1mRunner Columns (0.008534)[0m   [0mSHOW FIELDS FROM `runners`[0m
+  [4;36;1mRun Load Including Associations (0.001560)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (`runs`.`time7600` IS NULL AND `runs`.`time11200` IS NULL AND `runs`.`time15200` IS NULL) ORDER BY time3600[0m
+  [4;35;1mRun Load Including Associations (0.001132)[0m   [0mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (time7600 is not null and time15200 is null) ORDER BY time7600[0m
+  [4;36;1mRun Load Including Associations (0.001040)[0m   [0;1mSELECT `runs`.`id` AS t0_r0, `runs`.`runner_id` AS t0_r1, `runs`.`event_id` AS t0_r2, `runs`.`time3600` AS t0_r3, `runs`.`time7600` AS t0_r4, `runs`.`time11200` AS t0_r5, `runs`.`time15200` AS t0_r6, `runs`.`outsider` AS t0_r7, `runs`.`created_at` AS t0_r8, `runs`.`updated_at` AS t0_r9, `runs`.`age_class` AS t0_r10, `runners`.`id` AS t1_r0, `runners`.`birth_year` AS t1_r1, `runners`.`first_name` AS t1_r2, `runners`.`last_name` AS t1_r3, `runners`.`sex` AS t1_r4, `runners`.`outsider` AS t1_r5, `runners`.`created_at` AS t1_r6, `runners`.`updated_at` AS t1_r7 FROM `runs` LEFT OUTER JOIN `runners` ON `runners`.id = `runs`.runner_id WHERE (runs.event_id = 122) AND (time15200 is not null) ORDER BY time15200[0m
+calling url http://www.23hq.com/services/rest/?api_key=86e18ef2a064ff2255845e029208d7f4&method=flickr.photos.search&max_taken_date=2007-03-18&owner=426283&per_page=10&tags=pyynikki%2C+testrun&sort=interestingness-desc&min_taken_date=2007-03-17, @host is http://www.23hq.com
+Rendering template within layouts/application
+Rendering events/show
+Completed in 0.21554 (4 reqs/sec) | Rendering: 0.00955 (4%) | DB: 0.02433 (11%) | 200 OK [http://localhost/events/2007-03-17]

@@ -1,2 +1,23 @@
-<h1>Runners#index</h1>
-<p>Find me in app/views/runners/index.html.erb</p>
+<h1>
+  Juoksijat
+</h1>
+
+<p>
+  <% @runners.keys.sort.each do |key| %>
+  <%= link_to key, "##{key}" %>
+  <% end %>
+</p>
+
+<% @runners.keys.sort.each do |char| %>
+  <h2>
+    <a id="<%= char %>"><%= char %></a>
+  </h2>
+  
+  <ul>
+    <% for runner in @runners[char] %>
+    <li id="runner_<%= runner.id %>">
+      <%= link_to(runner.name, runner_path(runner)) %>
+    </li>
+    <% end %>
+  </ul>
+<% end %>

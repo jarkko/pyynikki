@@ -152,4 +152,10 @@ describe Runner do
       @runner.to_param.should == "69-jarno-salmelin"
     end
   end
+  
+  describe "title" do
+    it "should return name" do
+      @runner.title.should == @runner.name
+    end
+  end
 end
