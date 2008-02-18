@@ -1,0 +1,6 @@
+--- 
+l10n-simplified: 
+  local_branch: braid/svn/l10n-simplified
+  type: svn
+  branch: master
+  remote: svn://rubyforge.org/var/svn/l10n-simplified
