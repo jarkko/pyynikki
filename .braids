@@ -4,3 +4,8 @@ query_analyzer:
   type: svn
   branch: master
   remote: http://svn.nfectio.us/plugins/query_analyzer
+vendor/plugins/restful_authentication: 
+  local_branch: braid/svn/vendor/plugins/restful-authentication
+  type: svn
+  branch: master
+  remote: http://svn.techno-weenie.net/projects/plugins/restful_authentication
