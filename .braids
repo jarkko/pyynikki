@@ -1,0 +1,6 @@
+--- 
+query_analyzer: 
+  local_branch: braid/svn/query-analyzer
+  type: svn
+  branch: master
+  remote: http://svn.nfectio.us/plugins/query_analyzer
