@@ -1,0 +1,47 @@
+# ==========
+# create release with rake task
+# ==========
+1. set version number in ./version.rb
+2. rake package
+3. rake gem
+(alternative: rake repackage and rake clobber_package)
+
+# ==========
+# release file on rubyforge
+# ==========
+http://rubyforge/projects/l10n-simplified > files > admin > quick release:
+https://rubyforge.org/frs/admin/qrs.php?package_id=&group_id=2074
+* package ID: localization_simplified
+* Release name: localization_simplified v0.9 (for Rails 1.2+, 2.0+)
+* date, filename
+* File type: .zip or .gz
+* Processor type: any
+* Release notes (summary of release)
+* Changelog (from README)
+* Remember add another upload file to release
+
+
+# ==========
+# update on www.agilewebdevelopment.com
+# ==========
+http://agilewebdevelopment.com/plugins/localization_simplified
+http://agilewebdevelopment.com/plugins/edit/344
+
+* short description should be updated with "current release" 
+* description updated from README file. From top down to Installation
+
+
+# ==========
+# update on Rails wiki comparison with version number
+# ==========
+http://wiki.rubyonrails.com/rails/pages/InternationalizationComparison
+
+
+
+# ==========
+# other commands that I use with this plugin
+# ==========
+
+ 
+FIXME Create rdoc not including every lang-file (only lang_en.rb)
+FIXME describe upload of rdoc to l10n-simplified website

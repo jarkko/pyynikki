@@ -1,0 +1,67 @@
+* Swedish translation typos fixed (thanks Peter Hellberg)
+* --- release 0.9 (2008-01-13) ---
+* Possible to set language in environment.rb: L10N_LANG = :de
+* UTF-8 database charset configuration is default in Rails 1.2+ and 2.0, so not needed in plugin more.
+* L10n-Simplified plugin also available as gem from this release
+* Moved changelog from README to separate file changelog.txt
+* Removed duplicate line from lang_de.rb
+* Russian translation (thanks Denis Pankratov)
+* Corrected German date/time format (thanks Christian W Zuckschwerdt)
+* Added Portugese translation (thanks Carlos Afonso)
+* Italian translation adjustments (thanks Michele Franzin)
+* Fixed translation error in Swedish translation (thanks Ingemar Edsborn)
+* Czech translation by Karel Minařík
+* French lang file updated (thanks Bruno Michel)
+* Added Serbian (thanks Slobodan Kovacevic)
+* Lang_it file must be UTF-8 encoded (thanks Fabio Bonelli)
+* Added rake task for creating a release "rake package"
+* Fixed rake task for generating rdoc in UTF-8 format
+* Added Norwegian (thanks Fredrik Bach)
+* --- release 0.8 ---
+* Works with Rails 1.2 (not working with earlier versions)
+* Whitespace/formatting modifications. Removed commented code not needed
+* Removed code from plugin because Rails 1.2 date_select and datetime_select 
+  now support :order
+* ActiveRecord hooks updated for Rails 1.2 (thanks Casper Fabricius)
+* Dots after day number in time formats (Danish), to keep it consistent with Date formats
+* --- release 0.7.1 ---
+* Fixed RJS bug where javascript content-header was overwritten with text/html (thanks Jakob Skjerning)
+* Small language corrections by Wijnand Wiersma
+* PostGres friendly: Added quotes around ActiveRecord::Base.connection.execute "SET NAMES 'UTF8'" (thanks Wijnand Wiersma)
+* German language errors corrected by Matthias Tarasiewicz
+* Added "no step three" in installation section :)
+* --- release 0.7 ---
+* Fixed messed-up ø's and a few wording changes in README 
+* Override +number_to_currency+ and +datetime_select+ to support :order 
+  even though I prefer these changes to go into Rails Core (2006-10-10)
+* Added italian lang file (thanks Michele Franzin) (2006-10-08)
+* Added argentinian flavoured Spanish lang File + corrected bug in lang_es (thanks Damian Janowski) (2006-10-03)
+* German translation issues (thanks Christian W. Zuckschwerdt) (2006-10-03)
+* Fixed typo in README File (thanks Diego Algorta Casamayou) (2006-10-02)
+* Bugfix removed incorrect 'then' after 'else' (thanks Michele Franzin)(2006-09-16) 
+* Added augmented and corrected distance_of_time_in_words from Rails trunk (2006-09-07)
+* Added date_select and datetime_select on the helper page (2006-09-07)
+* Updated dutch date-time formats, thanks Jeroen Houben (2006-09-07)
+* --- release 0.6.1 ---
+* Added comments in all lang-files, thanks Jarkko Laine for the idea (2006-09-07)
+* Bugfix: Replaced hardcoded string in distance_of_time_in_words when :include_seconds was false (2006-08-30)
+* Added Canadian French translation (thanks Daniel) (2006-08-25)
+* Added comments in lang-file for documentation of how to localize (2006-08-25)
+* Added French translation (thanks Fred Cavazza) (2006-08-25)
+* Added Finnish translation (thanks Jarkko Laine) (2006-08-25)
+* Bugfix re-added HTTP header for UTF-8. Necessary for some lang-files (2004-08-24)
+* --- release 0.6 ---
+* Renamed test files to make rake test command work (2006-08-23)
+* Localized time "Wed Aug 23 12:38:22 Romance Daylight Time 2006" =>
+                 "onsdag d. 23 august 2006 12:38:22" (Danish)
+* Reordering of date_select fields (2006-08-23) 
+* Test that plugin works with the Rails version it is installed next to (2006-08-20)
+* Added Dutch translation lang_nl.rb, thanks to Jeroen Houben (2006-08-20)
+* Added Pirate language lang_pirate.rb, thanks to Tobias Michaelsen (2006-08-18)
+* Added Date and Time#to_formatted_s with locale specific strings (2006-08-18)
+* Added MIT-license, copied from Ruby on Rails (2006-08-13)
+* Added tests for plugin (2006-08-13)
+* Localized version of Array.to_sentence (2006-08-09)
+* Added test scaffold  (2006-08-09)
+* Added swedish language, thanks to Olle Jonsson (2006-08-09)
+* Localized version of to_currency helper (2006-08-07)  
