@@ -46,4 +46,20 @@ Spec::Runner.configure do |config|
      :first_name => "Pekka",
      :last_name => "Itävuo"}
   end
+  
+  def mock_run(opts = {})
+    mock_model(Run, valid_run_attributes.merge(opts))
+  end
+  
+  def valid_run_attributes
+    {}
+  end
+  
+  def mock_event(opts = {})
+    mock_model(Event, valid_event_attributes.merge(opts))
+  end
+  
+  def valid_event_attributes
+    {:event_date => Date.new(2007,11,23)}
+  end
 end

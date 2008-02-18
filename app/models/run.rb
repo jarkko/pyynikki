@@ -34,7 +34,15 @@ class Run < ActiveRecord::Base
     send("find_" + methods[length], opts)
   end
   
-  def result(split)
+  def self.find_recent
+    runs = find(:all, :include => :event, :order => "events.event_date desc")
+    return {} if runs.blank?
+    runs.group_by do |item|
+      item.event.event_date.year
+    end
+  end
+  
+  def result(split = latest_split)
     method = "time" + split.to_s
     return nil unless respond_to?(method)
     
@@ -83,6 +91,11 @@ class Run < ActiveRecord::Base
     else
       ""
     end      
+  end
+  
+  def length
+    return nil unless latest = latest_split
+    "#{latest / 1000.0} km"
   end
   
   private

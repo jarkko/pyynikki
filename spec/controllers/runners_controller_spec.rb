@@ -33,6 +33,10 @@ describe RunnersController do
     before(:each) do
       @angsti = mock_model(Runner, :name => "Pekka Itävuo")
       Runner.stub!(:find).and_return(@angsti)
+      
+      @runs = [mock_run, mock_run]
+      @angsti.stub!(:runs).and_return(@runs)
+      @runs.stub!(:find_recent).and_return(@runs)
     end
     
     def do_get
@@ -54,6 +58,11 @@ describe RunnersController do
       assigns[:breadcrumbs].should == [{:url => "/", :title => "Pyynikin testijuoksu"},
                                        {:url => "/runners", :title => "Juoksijat"},
                                        {:url => runner_path(@angsti), :title => @angsti.name}]
+    end
+    
+    it "should assign recent results" do
+      do_get
+      assigns[:recent].should == @runs
     end
   end
 end

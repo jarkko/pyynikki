@@ -18,8 +18,8 @@ class EventsController < ApplicationController
       @photos = Timeout::timeout(9) do
         TwentyThree.new.photos(:tags => "pyynikki, testrun", 
                                          :owner => "426283",
-                                         :min_taken_date => @event.event_date.to_s, 
-                                         :max_taken_date => (@event.event_date + 1).to_s,
+                                         :min_taken_date => @event.event_date.strftime("%Y-%m-%d"),
+                                         :max_taken_date => (@event.event_date + 1).strftime("%Y-%m-%d"),
                                          :per_page => 10,
                                          :sort => "interestingness-desc")
       end

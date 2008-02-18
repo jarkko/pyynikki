@@ -4,6 +4,7 @@ class RunnersController < ApplicationController
 
   def show
     @runner = Runner.find(params[:id])
+    @recent = @runner.runs.find_recent
     @page_title = @runner.name
     @breadcrumbs << {:url => runner_path(@runner), :title => @runner.name}
   end

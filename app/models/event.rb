@@ -12,7 +12,7 @@ class Event < ActiveRecord::Base
   end
   
   def to_param
-    event_date.to_s
+    event_date.strftime("%Y-%m-%d")
   end
   
   def title

@@ -85,14 +85,39 @@ describe Run, "custom finders" do
       Run.find_results_for(3600)
     end
   end
+  
+  describe "find_recent" do
+    before(:each) do
+      @run1 = Run.new(:event => mock_event)
+      @run2 = Run.new(:event => mock_event(:event_date => Date.new(2006,11,23)))
+      @runs = [@run1, @run2]
+      Run.stub!(:find).and_return(@runs)
+    end
+    
+    it "should return recent runs" do
+      Run.should_receive(:find).with(:all, 
+                                     :include => :event,
+                                     :order => "events.event_date desc")
+      Run.find_recent
+    end
+    
+    it "should group by year" do
+      @runs.should_receive(:group_by)
+      Run.find_recent
+    end
+    
+    it "should return runs grouped by year" do
+      Run.find_recent.should == {2007 => [@run1], 2006 => [@run2]}
+    end
+  end
 end
 
 describe Run do
   before(:each) do
     @run = Run.new
-    @run.stub!(:time7600).and_return(1563)
-    @run.stub!(:time15200).and_return(3778)
-    @run.stub!(:time11200).and_return(nil)
+    @run.time7600 = 1563
+    @run.time15200 = 3778
+    @run.time11200 = nil
   end
   
   describe "result" do
@@ -102,6 +127,10 @@ describe Run do
 
     it "should return correct string when over an hour" do
       @run.result(15200).should == "62:58"
+    end
+    
+    it "should return the longest possible split time when no param given" do
+      @run.result.should == "62:58"
     end
 
     it "should return nil when no such split time" do
@@ -246,6 +275,38 @@ describe Run do
         it "should return empty string" do
           @run.splits.should == ""
         end
+      end
+    end
+  end
+  
+  describe "length" do
+    describe "when split time for 15200" do
+      it "should be 15,2 km" do
+        @run.length.should == "15,2 km"
+      end
+    end
+    
+    describe "when longest split time 7600" do
+      before(:each) do
+        @run.time15200 = nil
+        @run.time11200 = nil
+      end
+      
+      it "should be 7,6 km" do
+        @run.length.should == "7,6 km"
+      end
+    end
+    
+    describe "when longest split time 3600" do
+      before(:each) do
+        @run.time15200 = nil
+        @run.time11200 = nil
+        @run.time7600 = nil
+        @run.time3600 = 900
+      end
+      
+      it "should be 3,6 km" do
+        @run.length.should == "3,6 km"
       end
     end
   end

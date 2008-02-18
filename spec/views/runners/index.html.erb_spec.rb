@@ -17,7 +17,7 @@ describe "/runners/index" do
   it "should have headings for each existing leading character" do
     %w(I S).each do |char|
       response.should have_tag("h2") do
-        with_tag("a[link='#{char}']", char)
+        with_tag("a[id='#{char}']", char)
       end
     end
   end

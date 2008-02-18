@@ -6,34 +6,53 @@
   </h2>
   
   <table>
-    <% if @runner.record_run(15200) %>
-    <tr>
-      <td>15,2 km</td>
-      <td><%= @runner.record_time(15200) %></td>
-      <td><%= link_to @runner.record_run(15200).event.event_date.to_finnish,
-              event_path(@runner.record_run(15200).event,
-                         :anchor => "run_#{@runner.record_run(15200).to_param}") %></td>
-    </tr>
-    <% end %>
+    <% [15200, 7600, 3600].each do |km| %>
     
-    <% if @runner.record_run(7600) %>
-    <tr>
-      <td>7,6 km</td>
-      <td><%= @runner.record_time(7600) %></td>
-      <td><%= link_to @runner.record_run(7600).event.event_date.to_finnish,
-              event_path(@runner.record_run(7600).event,
-                         :anchor => "run_#{@runner.record_run(7600).to_param}") %></td>
-    </tr>
-    <% end %>
+      <% if @runner.record_run(km) %>
+      <tr>
+        <td><%= (km / 1000.0).to_s %> km</td>
+        <td><%= @runner.record_time(km) %></td>
+        <td><%= link_to @runner.record_run(km).event.event_date.to_finnish,
+                event_path(@runner.record_run(km).event,
+                           :anchor => "run_#{@runner.record_run(km).to_param}") %></td>
+      </tr>
+      <% end %>
     
-    <% if @runner.record_run(3600) %>
+    <% end %>
+  </table>
+</div>
+
+<div id="recent">
+  <h2>
+    Viimeisimmät tulokset
+  </h2>
+  
+  <table>
+    <% @recent.keys.sort.reverse.each do |year| %>
     <tr>
-      <td>3,6 km</td>
-      <td><%= @runner.record_time(3600) %></td>
-      <td><%= link_to @runner.record_run(3600).event.event_date.to_finnish,
-              event_path(@runner.record_run(3600).event,
-                         :anchor => "run_#{@runner.record_run(3600).to_param}") %></td>
+      <th><%= year %></th>
+    </tr>
+    
+    <% @recent[year].each do |run| %>
+    <tr id="run_<%= run.id %>">
+      <td>
+        <%= link_to(run.event.event_date.to_finnish, 
+                    event_path(run.event, :anchor => "run_#{run.to_param}")) %>
+      </td>
+      
+      <td>
+        <%= run.length %>
+      </td>
+      
+      <td class="result">
+        <%= run.result %>
+      </td>
+      
+      <td class="splits">
+        <%= run.splits %>
+      </td>
     </tr>
     <% end %>
+    <% end %>  
   </table>
 </div>
