@@ -91,9 +91,9 @@ module LocalizationSimplified
     # http://api.rubyonrails.org/classes/ActionView/Helpers/NumberHelper.html#M000449
     CurrencyOptions = {
       :unit      => "€",
-      :separator => ",",             #unit separator (between integer part and fraction part)
-      :delimiter => "",             #delimiter between each group of thousands. Example: 1.234.567 
-      :order     => [:number, :unit] #order is at present unsupported in Rails
+      :separator => " ",             #unit separator (between integer part and fraction part)
+      :delimiter => ",",             #delimiter between each group of thousands. Example: 1.234.567 
+      :order     => [:unit, :number] #order is at present unsupported in Rails
       #to support for instance Danish format, the order is different: Unit comes last (ex. "1.234,00 dkr.")
     }
   end

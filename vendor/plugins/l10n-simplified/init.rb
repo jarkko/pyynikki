@@ -1,7 +1,7 @@
 # set L10N_LANG constant in your environment.rb or here
 # 
 # Choose language file here. Only one language file can be selected
-#L10N_LANG ||= :da
+L10N_LANG ||= :da
 
 #require 'lang_en' #default language to run the test cases
 require  "lang_" + L10N_LANG.to_s

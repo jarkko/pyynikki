@@ -194,22 +194,6 @@ class Time
   end
 end
 
-# Show normal numbers (other than currency) localized
-class Float
-  alias_method :old_to_s, :to_s
-  
-  def to_s
-    options = LocalizationSimplified::NumberHelper::CurrencyOptions
-    separator, delimiter = options[:separator], 
-                           options[:delimiter]
-
-    parts = self.old_to_s.split('.')
-    parts[0].gsub!(/(\d)(?=(\d\d\d)+(?!\d))/, "\\1#{delimiter}")
-    parts.join separator
-  end
-end
-
-
 # Modification of default Date format using Date.to_formatted_s(:default)
 # Localizes the hash with the formats  :default, :short, :long
 # Usage:
