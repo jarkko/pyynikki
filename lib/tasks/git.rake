@@ -1,11 +1,11 @@
 namespace :git do
   desc "Get latest from upstream"
   task :pull do
-    system("git-svn rebase")
+    system("git pull")
   end
 
   desc "Push local git branch to remote svn"
   task :push do
-    system("git-svn dcommit")
+    system("git push")
   end
 end
