@@ -3,3 +3,4 @@ log_file: log/mongrel.log
 port: 8500
 pid_file: tmp/pids/mongrel.pid
 servers: 1
+cwd: /home/jarkko/sites/pyynikki/current
