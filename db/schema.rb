@@ -1,5 +1,5 @@
 # This file is auto-generated from the current state of the database. Instead of editing this file, 
-# please use the migrations feature of ActiveRecord to incrementally modify your database, and
+# please use the migrations feature of Active Record to incrementally modify your database, and
 # then regenerate this schema definition.
 #
 # Note that this schema.rb definition is the authoritative source for your database schema. If you need
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(:version => 4) do
     t.string   "age_class"
   end
 
-  add_index "runs", ["runner_id"], :name => "index_runs_on_runner_id"
   add_index "runs", ["event_id"], :name => "index_runs_on_event_id"
+  add_index "runs", ["runner_id"], :name => "index_runs_on_runner_id"
 
 end
