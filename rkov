@@ -1,0 +1,1 @@
+rcov --rails --spec-only --sort name --only-uncovered spec/*/*.rb

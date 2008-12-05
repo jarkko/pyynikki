@@ -1,0 +1,5 @@
+
+ * make the rkov script into a rake task
+ * validations in Runner: run, name, sex, because RunObserver calls
+   runner.age_class_with_gender(run.event.event_date)
+ * validations into the migration files
