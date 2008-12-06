@@ -13,21 +13,29 @@ class ApplicationController < ActionController::Base
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password  
   
+  before_filter :set_locale
   before_filter :init_breadcrumbs, :add_controller_specific_breadcrumb
   
   def not_found
-    render :text => "Not found", :status => 404
+    render :text => t('app.common.not_found'), :status => 404
   end
   
   private
   
   def init_breadcrumbs
-    @breadcrumbs = [{:url => root_path, :title => "Pyynikin testijuoksu"}]
+    @breadcrumbs = [{:url => root_path, :title => t('app.common.pyynikin_testijuoksu')}]
   end
   
   def add_controller_specific_breadcrumb
-    @titles = {"events" => "Testijuoksut", "runners" => "Juoksijat"}
+    @titles = {
+      "events" => t('app.common.testijuoksut'),
+      "runners" => t('app.common.juoksijat')
+    }
     @breadcrumbs << {:url => send(params[:controller] + "_path"),
                      :title => @titles[params[:controller]]}
+  end
+  
+  def set_locale
+    I18n.locale = params[:locale] || 'fi' || I18n.default_locale
   end
 end

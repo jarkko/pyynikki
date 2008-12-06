@@ -4,14 +4,14 @@
   <dl>
     <% if @event.temperature %>
     <dt>
-      Lämpötila
+      <%=t 'app.common.lampotila' %>
     </dt>
     <%= temperature(@event) %>
     <% end %>
     
     <% if @event.weather %>
     <dt>
-      Olosuhteet
+      <%=t 'app.common.olosuhteet' %>
     </dt>
     <dd>
       <%= @event.weather %>

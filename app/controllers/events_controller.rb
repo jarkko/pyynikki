@@ -3,7 +3,7 @@ require 'timeout'
 class EventsController < ApplicationController
 
   def index
-    @page_title = "Testijuoksut"
+    @page_title = t 'app.common.testijuoksut'
     @events = Event.find(:all, :order => "event_date desc").group_by{|e| e.event_date.year}
     @years = @events.keys.sort.reverse
   end
