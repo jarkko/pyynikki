@@ -1,6 +1,8 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
 describe ApplicationHelper do
+  helper_name :application
+  
   describe "breadcrumbs" do
     describe "when breadcrumbs empty" do
       it "should show nothing" do

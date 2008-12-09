@@ -107,7 +107,7 @@ describe Run, "custom finders" do
     end
     
     it "should return runs grouped by year" do
-      Run.find_recent.should == {2007 => [@run1], 2006 => [@run2]}
+      Run.find_recent.should == [[2007, [@run1]], [2006, [@run2]]]
     end
   end
 end
@@ -281,8 +281,8 @@ describe Run do
   
   describe "length" do
     describe "when split time for 15200" do
-      it "should be 15,2 km" do
-        @run.length.should == "15,2 km"
+      it "should be 15.2 km" do
+        @run.length.should == "15.2 km"
       end
     end
     
@@ -292,8 +292,8 @@ describe Run do
         @run.time11200 = nil
       end
       
-      it "should be 7,6 km" do
-        @run.length.should == "7,6 km"
+      it "should be 7.6 km" do
+        @run.length.should == "7.6 km"
       end
     end
     
@@ -305,8 +305,8 @@ describe Run do
         @run.time3600 = 900
       end
       
-      it "should be 3,6 km" do
-        @run.length.should == "3,6 km"
+      it "should be 3.6 km" do
+        @run.length.should == "3.6 km"
       end
     end
   end

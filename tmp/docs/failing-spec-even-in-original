@@ -1,0 +1,232 @@
+(in /tmp/e/r)
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[35mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+1)
+[31m'RunnersController GET 'index' should assign runners' FAILED
+expected: {"S"=>[#<Spec::Runner:0x..fdb5bc1e6 @name="Runner_1013">], "I"=>[#<Spec::Runner:0x..fdb5be036 @name="Runner_1012">]},
+     got: [["I", [#<Spec::Runner:0x..fdb5be036 @name="Runner_1012">]], ["S", [#<Spec::Runner:0x..fdb5bc1e6 @name="Runner_1013">]]] (using ==)[0m
+/tmp/e/r/vendor/plugins/rspec/lib/spec/expectations.rb:52:in `fail_with'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:46:in `fail_with_message'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:56:in `__delegate_method_missing_to_target'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:12:in `=='
+./spec/controllers/runners_controller_spec.rb:28:
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `instance_eval'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers.rb:144:in `capture_generated_description'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:286:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:120:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/options.rb:87:in `run_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/tmp/e/r/vendor/plugins/rspec/bin/spec:3:
+
+2)
+[35mActionController::RenderError in 'EventsController show when event not found should return 404'
+You called render with invalid options : {:status=>404, :text=>"Not found"}, nil[0m
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:843:in `render_with_no_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+/tmp/e/r/vendor/plugins/rspec_on_rails/lib/spec/rails/example/controller_example_group.rb:189:in `render'
+/tmp/e/r/app/controllers/application.rb:14:in `not_found'
+/tmp/e/r/app/controllers/events_controller.rb:13:in `show'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_without_test'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/test_process.rb:16:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/test_process.rb:394:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/test_process.rb:365:in `get'
+./spec/controllers/events_controller_spec.rb:16:in `do_get'
+./spec/controllers/events_controller_spec.rb:48:
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `instance_eval'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers.rb:144:in `capture_generated_description'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:286:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:120:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/options.rb:87:in `run_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/tmp/e/r/vendor/plugins/rspec/bin/spec:3:
+
+3)
+[31m'/runners/show should show records' FAILED
+</15,2 km/> expected but was
+<"15.2 km">.
+<false> is not true.[0m
+/tmp/e/r/vendor/plugins/rspec/lib/spec/expectations.rb:52:in `fail_with'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/expectations/handler.rb:21:in `handle_matcher'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/expectations/extensions/object.rb:34:in `should'
+/tmp/e/r/vendor/plugins/rspec_on_rails/lib/spec/rails/matchers/assert_select.rb:88:in `with_tag'
+./spec/views/runners/show.html.erb_spec.rb:33:
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/assertions/selector_assertions.rb:307:in `assert_select'
+/tmp/e/r/vendor/plugins/rspec_on_rails/lib/spec/rails/matchers/assert_select.rb:26:in `send'
+/tmp/e/r/vendor/plugins/rspec_on_rails/lib/spec/rails/matchers/assert_select.rb:26:in `matches?'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/expectations/handler.rb:19:in `handle_matcher'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/expectations/extensions/object.rb:34:in `should'
+/tmp/e/r/vendor/plugins/rspec_on_rails/lib/spec/rails/matchers/assert_select.rb:88:in `with_tag'
+./spec/views/runners/show.html.erb_spec.rb:32:
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/assertions/selector_assertions.rb:307:in `assert_select'
+/tmp/e/r/vendor/plugins/rspec_on_rails/lib/spec/rails/matchers/assert_select.rb:26:in `send'
+/tmp/e/r/vendor/plugins/rspec_on_rails/lib/spec/rails/matchers/assert_select.rb:26:in `matches?'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/expectations/handler.rb:19:in `handle_matcher'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/expectations/extensions/object.rb:34:in `should'
+./spec/views/runners/show.html.erb_spec.rb:30:
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `instance_eval'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers.rb:144:in `capture_generated_description'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:286:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:120:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/options.rb:87:in `run_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/tmp/e/r/vendor/plugins/rspec/bin/spec:3:
+
+4)
+[31m'Run length when longest split time 3600 should be 3,6 km' FAILED
+expected: "3,6 km",
+     got: "3.6 km" (using ==)[0m
+/tmp/e/r/vendor/plugins/rspec/lib/spec/expectations.rb:52:in `fail_with'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:46:in `fail_with_message'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:56:in `__delegate_method_missing_to_target'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:12:in `=='
+./spec/models/run_spec.rb:309:
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `instance_eval'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers.rb:144:in `capture_generated_description'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:286:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:120:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/options.rb:87:in `run_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/tmp/e/r/vendor/plugins/rspec/bin/spec:3:
+
+5)
+[31m'Run length when longest split time 7600 should be 7,6 km' FAILED
+expected: "7,6 km",
+     got: "7.6 km" (using ==)[0m
+/tmp/e/r/vendor/plugins/rspec/lib/spec/expectations.rb:52:in `fail_with'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:46:in `fail_with_message'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:56:in `__delegate_method_missing_to_target'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:12:in `=='
+./spec/models/run_spec.rb:296:
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `instance_eval'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers.rb:144:in `capture_generated_description'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:286:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:120:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/options.rb:87:in `run_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/tmp/e/r/vendor/plugins/rspec/bin/spec:3:
+
+6)
+[31m'Run length when split time for 15200 should be 15,2 km' FAILED
+expected: "15,2 km",
+     got: "15.2 km" (using ==)[0m
+/tmp/e/r/vendor/plugins/rspec/lib/spec/expectations.rb:52:in `fail_with'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:46:in `fail_with_message'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:56:in `__delegate_method_missing_to_target'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:12:in `=='
+./spec/models/run_spec.rb:285:
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `instance_eval'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers.rb:144:in `capture_generated_description'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:286:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:120:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/options.rb:87:in `run_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/tmp/e/r/vendor/plugins/rspec/bin/spec:3:
+
+7)
+[31m'Run custom finders find_recent should return runs grouped by year' FAILED
+expected: {2007=>[#<Run id: nil, runner_id: nil, event_id: 1164, time3600: nil, time7600: nil, time11200: nil, time15200: nil, outsider: false, created_at: nil, updated_at: nil, age_class: nil>], 2006=>[#<Run id: nil, runner_id: nil, event_id: 1165, time3600: nil, time7600: nil, time11200: nil, time15200: nil, outsider: false, created_at: nil, updated_at: nil, age_class: nil>]},
+     got: [[2007, [#<Run id: nil, runner_id: nil, event_id: 1164, time3600: nil, time7600: nil, time11200: nil, time15200: nil, outsider: false, created_at: nil, updated_at: nil, age_class: nil>]], [2006, [#<Run id: nil, runner_id: nil, event_id: 1165, time3600: nil, time7600: nil, time11200: nil, time15200: nil, outsider: false, created_at: nil, updated_at: nil, age_class: nil>]]] (using ==)[0m
+/tmp/e/r/vendor/plugins/rspec/lib/spec/expectations.rb:52:in `fail_with'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:46:in `fail_with_message'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:56:in `__delegate_method_missing_to_target'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb:12:in `=='
+./spec/models/run_spec.rb:110:
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `instance_eval'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:79:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/matchers.rb:144:in `capture_generated_description'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:78:in `run_with_description_capturing'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:19:in `execute'
+/usr/lib/ruby/1.8/timeout.rb:48:in `timeout'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_methods.rb:16:in `execute'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:286:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:285:in `execute_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:120:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `each'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:21:in `run'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/options.rb:87:in `run_examples'
+/tmp/e/r/vendor/plugins/rspec/lib/spec/runner/command_line.rb:19:in `run'
+/tmp/e/r/vendor/plugins/rspec/bin/spec:3:
+
+Finished in 1.778704 seconds
+
+[31m84 examples, 7 failures[0m

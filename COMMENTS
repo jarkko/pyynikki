@@ -1,0 +1,13 @@
+
+* Removed l10n-simplified (actually only moved it to tmp/not-needed). 
+  In the original version (commit 026a150) the specs were failing because of 
+  l10n problems (e.g. 'expected: "15,2 km", got: "15.2 km"', 
+  see tmp/docs/failing-spec-even-in-original), so even the l10n-simplified
+  plugin was not a cure. Since the new I18n module seems to provide
+  everything which l10n provided, I moved it out of the way.
+  
+  The problem with both l10n and I18n is that they don't automatically
+  localize numbers. The only solution I found is to change the "15.2"
+  in the specs to "15,2".
+  
+  Further testing of the localization will be with webrat.

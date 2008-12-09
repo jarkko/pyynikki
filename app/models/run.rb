@@ -5,6 +5,11 @@ class Run < ActiveRecord::Base
   validates_presence_of :runner_id, :event_id
   validates_associated :runner, :event
   
+  #  3600 = short
+  #  7600 = one_lap
+  # 11200 = 3600 + 7600
+  # 15200 = 7600 + 7600 = long
+  
   def self.find_short(opts = {})
     find(:all,
          {:conditions => {:time7600 => nil,
@@ -14,6 +19,7 @@ class Run < ActiveRecord::Base
           :include => :runner}.merge(opts))
   end
   
+  # includes 11200. does it matter at all?
   def self.find_one_lap(opts = {})
     find(:all, 
          {:conditions => "time7600 is not null and time15200 is null",
@@ -81,6 +87,7 @@ class Run < ActiveRecord::Base
     end
   end
   
+  # (5:00, 10:00, 16:40)
   def splits
     case latest_split
     when 15200
@@ -93,6 +100,7 @@ class Run < ActiveRecord::Base
     end      
   end
   
+  # latest_split in km-s
   def length
     return nil unless latest = latest_split
     "#{latest / 1000.0} km"
@@ -107,6 +115,7 @@ class Run < ActiveRecord::Base
       sprintf("%02d:%02d", minutes, seconds)
     end
     
+    # latest_split in meters
     def latest_split
       [15200, 7600, 3600].each do |length|
         return length if send("time#{length}")

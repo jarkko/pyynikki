@@ -31,11 +31,15 @@ class ApplicationController < ActionController::Base
       "events" => t('app.common.testijuoksut'),
       "runners" => t('app.common.juoksijat')
     }
+    # send("events_path") == eval("events_path")
     @breadcrumbs << {:url => send(params[:controller] + "_path"),
                      :title => @titles[params[:controller]]}
   end
   
+  # temporary hack, until the user can't choose between locales
   def set_locale
-    I18n.locale = params[:locale] || 'fi' || I18n.default_locale
+    # new locale can be set thru params[]
+    locale = params[:locale] ? params[:locale] : :fi
+    I18n.default_locale = I18n.locale = locale
   end
 end

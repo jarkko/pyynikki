@@ -6,15 +6,15 @@
   </h2>
   
   <table>
-    <% [15200, 7600, 3600].each do |km| %>
+    <% [15200, 7600, 3600].each do |m| %>
     
-      <% if @runner.record_run(km) %>
+      <% if @runner.record_run(m) %>
       <tr>
-        <td><%= (km / 1000.0).to_s %> km</td>
-        <td><%= @runner.record_time(km) %></td>
-        <td><%= link_to @runner.record_run(km).event.event_date.to_finnish,
-                event_path(@runner.record_run(km).event,
-                           :anchor => "run_#{@runner.record_run(km).to_param}") %></td>
+        <td><%= (m / 1000.0).to_s %> km</td>
+        <td><%= @runner.record_time(m) %></td>
+        <td><%= link_to @runner.record_run(m).event.event_date.to_finnish,
+                event_path(@runner.record_run(m).event,
+                           :anchor => "run_#{@runner.record_run(m).to_param}") %></td>
       </tr>
       <% end %>
     

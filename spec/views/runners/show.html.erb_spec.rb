@@ -2,6 +2,7 @@ require File.dirname(__FILE__) + '/../../spec_helper'
 
 describe "/runners/show" do
   before(:each) do
+    I18n.default_locale = :fi
     assigns[:runner] = @runner = mock_model(Runner, :name => "Pekka Itävuo")
     @runner.stub!(:record_time).with(15200).and_return("56:12")
     @runner.stub!(:record_time).with(7600).and_return("26:03")
@@ -30,14 +31,14 @@ describe "/runners/show" do
     response.should have_tag('div#records') do
       with_tag("h2", /Ennätykset/)
       with_tag("tr") do
-        with_tag("td", /15,2 km/)
+        with_tag("td", /15.2 km/)
         with_tag("td", /56:12/)
         with_tag("td") do
           with_tag("a[href=#{event_path(@event, :anchor => "run_#{@run.to_param}")}]", /20.11.2003/)
         end
       end
       with_tag("tr") do
-        with_tag("td", /7,6 km/)
+        with_tag("td", /7.6 km/)
         with_tag("td", /26:03/)
         with_tag("td") do
           with_tag("a[href=#{event_path(@event, :anchor => "run_#{@run.to_param}")}]", /20.11.2003/)

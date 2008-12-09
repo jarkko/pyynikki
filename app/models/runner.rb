@@ -4,6 +4,7 @@ class Runner < ActiveRecord::Base
   def record_run(split)
     @record_run ||= {}
     
+    # array.min( comparator-function )
     @record_run[split] ||= runs.min do |a,b|
       if a.record(split).nil?
         1

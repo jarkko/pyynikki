@@ -7,5 +7,5 @@
  * age_class is computed or given?
  * event.story is never used?
  * someday remove db/migrate/add_sample_data
- * test locale
  * enable to change locale
+ * delete tmp/l10n when sure that it's not needed
