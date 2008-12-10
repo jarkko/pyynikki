@@ -1,11 +1,12 @@
 
-Feature: Localized texts
+Feature: Localize texts
   In order to foreigners can understand the page too
   As a user
-  I want to change finnish text to english
+  I want to see localized text 
   
-  Scenario: A user visits the homepage, sees finnish text by default
-    Given an event, a runner and his run
+  Scenario: Finn user visits the homepage, sees finnish text
+    Given I'm a "finn" user
+    And I have an event, a runner and his run
     
     When I visit the "home" page
     Then I should see "Testijuoksut"
@@ -19,14 +20,11 @@ Feature: Localized texts
     Then I should see "Juoksijat"
     And I should not see "Runner"    
 
-  Scenario: A user can change between languages
-    Given an event, a runner and his run
+  Scenario: Hungarian user visits the homepage, sees english text
+    Given I'm a "hungarian" user
+    And I have an event, a runner and his run
     
     When I visit the "home" page
-    Then I should see "Testijuoksut"
-    And I should not see "Test of maturity"
-    
-    When I follow "In English"
     Then I should see "Test of maturity"
     And I should not see "Testijuoksut"
     
@@ -37,11 +35,3 @@ Feature: Localized texts
     When I visit the "runner's profile" page
     Then I should see "Runner"    
     And I should not see "Juoksijat"
-    
-    When I follow "Suomeksi"
-    Then I should see "Juoksijat"
-    And I should not see "Runner"
-
-    When I visit the "event" page
-    Then I should see "Olosuhteet"
-    And I should not see "Circumstances"

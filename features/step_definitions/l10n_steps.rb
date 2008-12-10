@@ -4,7 +4,7 @@ Given /^I\'m a "(.*)" user$/ do |nationality|
   @langcode = ( nationality == 'finn' ) ? 'fi' : 'en'
 end
 
-Given /^I have an event, a runner and his run$/ do
+Given /^.*an event, a runner and his run$/ do
   event = Event.create!( :event_date => Date.new(2007, 11, 24),
     :temperature => -3,
     :weather => 'Finland is cold.',

@@ -9,3 +9,4 @@
  * someday remove db/migrate/add_sample_data
  * enable to change locale
  * delete tmp/l10n when sure that it's not needed
+ * application.rb#set_locale, possible double submitting bug?

@@ -35,6 +35,8 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "events"
 
   map.resources :events, :runners
+  
+  map.locale 'set_locale/:locale', :controller => 'application', :action => 'set_locale'
 
   # See how all your routes lay out with "rake routes"
 

@@ -11,4 +11,11 @@ describe "/layouts/application" do
       with_tag("a[href='/']", "Pyynikin testijuoksu")
     end
   end
+  
+  it "should show languages" do
+    response.body.should have_tag("#languages") do
+      with_tag("a[href='/set_locale/en']", "In English")
+    end
+    response.body.should have_text(/Suomeksi/)
+  end
 end

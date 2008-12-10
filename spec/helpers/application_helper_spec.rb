@@ -25,4 +25,26 @@ describe ApplicationHelper do
       end
     end
   end
+  
+  describe "language_links" do
+    describe "when locale is finnish" do
+      before(:each) do
+        I18n.stub!(:locale).and_return(:fi)
+      end
+      
+      it "should show 'In English' active, 'Suomeksi' inactive" do
+        language_links == %{<a href="/set_locale/en">In English</a> | Suomeksi}
+      end
+    end
+        
+    describe "when locale is english" do
+      before(:each) do
+        I18n.stub!(:locale).and_return(:en)
+      end
+      
+      it "should show 'In English' inactive, 'Suomeksi' active" do
+        language_links == %{In English | <a href="/set_locale/fi">Suomeksi</a>}
+      end
+    end
+  end
 end

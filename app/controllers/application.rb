@@ -13,11 +13,18 @@ class ApplicationController < ActionController::Base
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password  
   
-  before_filter :set_locale
-  before_filter :init_breadcrumbs, :add_controller_specific_breadcrumb
+  before_filter :init_breadcrumbs
+  before_filter :add_controller_specific_breadcrumb, :except => [:set_locale]
   
   def not_found
     render :text => t('app.common.not_found'), :status => 404
+  end
+
+  def set_locale
+    return if not params[:locale]
+    I18n.default_locale = I18n.locale = params[:locale]
+    # can it cause problems if redirected to a POST page? (double submitting?)
+    redirect_to :back
   end
   
   private
@@ -34,12 +41,5 @@ class ApplicationController < ActionController::Base
     # send("events_path") == eval("events_path")
     @breadcrumbs << {:url => send(params[:controller] + "_path"),
                      :title => @titles[params[:controller]]}
-  end
-  
-  # temporary hack, until the user can't choose between locales
-  def set_locale
-    # new locale can be set thru params[]
-    locale = params[:locale] ? params[:locale] : :fi
-    I18n.default_locale = I18n.locale = locale
   end
 end
