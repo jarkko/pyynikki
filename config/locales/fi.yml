@@ -123,11 +123,11 @@ fi:
         
   app:
     common:
-      pyynikin_testijuoksu: Pyynikin testijuoksu
-      testijuoksut: Testijuoksut
-      lampotila: Lämpötila
-      olosuhteet: Olosuhteet
-      juoksijat: Juoksijat
-      ennatykset: Ennätykset
-      viimeisimmat_tulokset: Viimeisimmät tulokset
-      not_found: Not found
+      pyynikki_test_run: Pyynikin testijuoksu
+      test_runs: Testijuoksut
+      temperature: Lämpötila
+      circumstances: Olosuhteet
+      runners: Juoksijat
+      records: Ennätykset
+      latest_results: Viimeisimmät tulokset
+      not_found: Sivua ei löytynyt

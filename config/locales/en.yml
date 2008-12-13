@@ -7,11 +7,11 @@ en:
   app:
     common:
       # translated by Google translate
-      pyynikin_testijuoksu: Pyynikin test of maturity
-      testijuoksut: Test of maturity
-      lampotila: Temperature
-      olosuhteet: Circumstances
-      juoksijat: Runner
-      ennatykset: Records
-      viimeisimmat_tulokset: Latest results
+      pyynikki_test_run: Pyynikki test run
+      test_runs: Test runs
+      temperature: Temperature
+      circumstances: Circumstances
+      runners: Runners
+      records: Records
+      latest_results: Latest results
       not_found: Not found

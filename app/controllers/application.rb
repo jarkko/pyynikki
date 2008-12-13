@@ -30,13 +30,13 @@ class ApplicationController < ActionController::Base
   private
   
   def init_breadcrumbs
-    @breadcrumbs = [{:url => root_path, :title => t('app.common.pyynikin_testijuoksu')}]
+    @breadcrumbs = [{:url => root_path, :title => t('app.common.pyynikki_test_run')}]
   end
   
   def add_controller_specific_breadcrumb
     @titles = {
-      "events" => t('app.common.testijuoksut'),
-      "runners" => t('app.common.juoksijat')
+      "events" => t('app.common.test_runs'),
+      "runners" => t('app.common.runners')
     }
     # send("events_path") == eval("events_path")
     @breadcrumbs << {:url => send(params[:controller] + "_path"),
