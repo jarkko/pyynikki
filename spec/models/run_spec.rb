@@ -107,7 +107,7 @@ describe Run, "custom finders" do
     end
     
     it "should return runs grouped by year" do
-      Run.find_recent.should == [[2007, [@run1]], [2006, [@run2]]]
+      Run.find_recent.should == {2007 => [@run1], 2006 => [@run2]}
     end
   end
 end

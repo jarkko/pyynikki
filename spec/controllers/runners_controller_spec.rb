@@ -9,7 +9,7 @@ describe RunnersController do
                            :last_name => "Saarijärvi")
       @runners = [@angsti, @hannu]
       Runner.stub!(:find).with(:all, :order => "last_name, first_name").and_return(@runners)
-      @runners_grouped = [["I", [@angsti]], ["S", [@hannu]]]
+      @runners_grouped = {"I" => [@angsti], "S" => [@hannu]}
     end
     
     def do_get
