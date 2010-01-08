@@ -29,7 +29,7 @@ describe "/runners/show" do
   
   it "should show records" do
     response.should have_tag('div#records') do
-      with_tag("h2", /Ennätykset/)
+      with_tag("h2", /Records/)
       with_tag("tr") do
         with_tag("td", /15.2 km/)
         with_tag("td", /56:12/)

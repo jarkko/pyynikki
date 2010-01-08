@@ -1,4 +1,4 @@
-Feature: Manage events
+Feature: Manage events @wip
   In order to manage test runs
   As an admin 
   I want to be able to add, edit and remove events

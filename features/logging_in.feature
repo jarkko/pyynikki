@@ -9,6 +9,3 @@ Feature: Logging in
     And I fill in "Email" with "jarkko@jlaine.net"
     And I fill in "Password" with "tiger"
     Then I should be on admin page
-  
-  
-  

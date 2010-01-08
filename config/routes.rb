@@ -34,7 +34,12 @@ ActionController::Routing::Routes.draw do |map|
   # map.root :controller => "welcome"
   map.root :controller => "events"
 
-  map.resources :events, :runners
+  map.resources :events, :runners, :sessions
+  
+  map.admin "/admin", :controller => "admin/events"
+  map.namespace "admin" do |admin|
+    admin.resources :events
+  end
   
   map.locale 'set_locale/:locale', :controller => 'application', :action => 'set_locale'
 

@@ -14,8 +14,8 @@ describe "/layouts/application" do
   
   it "should show languages" do
     response.body.should have_tag("#languages") do
-      with_tag("a[href='/set_locale/en']", "In English")
+      with_tag("a[href='/set_locale/fi']", "Suomeksi")
     end
-    response.body.should have_text(/Suomeksi/)
+    response.body.should have_text(/In English/)
   end
 end

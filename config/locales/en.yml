@@ -7,7 +7,7 @@ en:
   app:
     common:
       # translated by Google translate
-      pyynikki_test_run: Pyynikki test run
+      pyynikki_test_run: Pyynikin testijuoksu
       test_runs: Test runs
       temperature: Temperature
       circumstances: Circumstances

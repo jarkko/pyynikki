@@ -3,6 +3,7 @@ Given /^a logged in user$/ do
 end
 
 Given /^existing user$/ do
-  @user = User.create!(:email => "jarkko@jlaine.net",
-                       :password => "tiger")
+  @user = User.create!(:login => "jarkko@jlaine.net",
+                       :password => "tiger",
+                       :password_confirmation => "tiger")
 end

@@ -56,7 +56,7 @@ describe RunnersController do
     it "should set breadcrumbs correctly" do
       do_get
       assigns[:breadcrumbs].should == [{:url => "/", :title => "Pyynikin testijuoksu"},
-                                       {:url => "/runners", :title => "Juoksijat"},
+                                       {:url => "/runners", :title => "Runners"},
                                        {:url => runner_path(@angsti), :title => @angsti.name}]
     end
     
