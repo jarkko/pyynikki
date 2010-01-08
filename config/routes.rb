@@ -34,7 +34,7 @@ ActionController::Routing::Routes.draw do |map|
   # map.root :controller => "welcome"
   map.root :controller => "events"
 
-  map.resources :events, :runners, :sessions
+  map.resources :events, :runners, :user_sessions
   
   map.admin "/admin", :controller => "admin/events"
   map.namespace "admin" do |admin|

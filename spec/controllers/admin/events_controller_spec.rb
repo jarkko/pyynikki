@@ -9,9 +9,9 @@ describe Admin::EventsController do
 
   describe "GET index" do
     describe "when not logged in" do
-      it "should redirect to sessions/new" do
+      it "should redirect to user_sessions/new" do
         get :index
-        response.should redirect_to(new_session_path)
+        response.should redirect_to(new_user_session_path)
       end
     end    
   end

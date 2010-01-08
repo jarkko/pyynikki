@@ -13,7 +13,10 @@ module NavigationHelpers
     
     when /admin page/
       "/admin"
-    
+      
+    when /the login page/
+      "/user_sessions"
+      
     # Add more mappings here.
     # Here is a more fancy example:
     #
