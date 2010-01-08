@@ -38,6 +38,7 @@ Rails::Initializer.run do |config|
   config.gem "authlogic"
   config.gem "shoulda"
   config.gem "formtastic"
+  config.gem "xml-simple"
   
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
