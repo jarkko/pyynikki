@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/../../spec_helper'
 
-describe "/runners/show" do
+describe "/runners/show.html.erb" do
   before(:each) do
     I18n.default_locale = :fi
     assigns[:runner] = @runner = mock_model(Runner, :name => "Pekka Itävuo")
@@ -20,7 +20,7 @@ describe "/runners/show" do
     @runner.stub!(:record_run).and_return(@run)
     
     assigns[:recent] = {"2007" => [@run], "2006" => [@run]}
-    render 'runners/show'
+    render
   end
   
   it "should show the runner name in the heading" do

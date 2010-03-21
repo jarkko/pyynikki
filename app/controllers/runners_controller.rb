@@ -10,7 +10,7 @@ class RunnersController < ApplicationController
   end
   
   def index
-    @runners = Runner.find(:all, :order => "last_name, first_name").group_by do |runner|
+    @runners = Runner.order("last_name, first_name").all.group_by do |runner|
       runner.last_name.first
     end
   end

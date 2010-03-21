@@ -1,8 +1,7 @@
+# encoding: UTF-8
 require File.dirname(__FILE__) + '/../spec_helper'
 
-describe EventsHelper do
-  helper_name :events
-  
+describe EventsHelper do  
   before(:each) do
     @event = mock_model(Event,
                         :temperature => 2,

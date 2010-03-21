@@ -74,7 +74,7 @@ class Flickr
     url = "#{@host}#{@api}/?api_key=#{@api_key}&method=flickr.#{method}"
     params[0][0].each_key do |key| url += "&#{key}=" + CGI::escape(params[0][0][key].to_s) end if params[0][0]
     url += "&email=#{@email}&password=#{@password}" if @email and @password
-    RAILS_DEFAULT_LOGGER.debug("calling url #{url}, @host is #{@host}")
+    Rails.logger.debug("calling url #{url}, @host is #{@host}")
     url
   end
   

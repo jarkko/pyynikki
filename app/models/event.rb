@@ -6,9 +6,7 @@ class Event < ActiveRecord::Base
   def all_results
     result = {}
     [3600, 7600, 15200].each do |length|
-      # runs: association object
-      # http://api.rubyonrails.org/classes/ActiveRecord/NamedScope/ClassMethods.html
-      result[length] = runs.find_results_for(length)
+      result[length] = runs.for_distance(length)
     end
     result
   end

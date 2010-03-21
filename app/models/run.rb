@@ -1,4 +1,8 @@
 class Run < ActiveRecord::Base
+  DISTANCES = {7600 => "one_lap",
+               15200 => "long",
+               3600 => "short"}
+  
   belongs_to :runner
   belongs_to :event
   
@@ -9,39 +13,33 @@ class Run < ActiveRecord::Base
   #  7600 = one_lap
   # 11200 = 3600 + 7600
   # 15200 = 7600 + 7600 = long
-  
-  def self.find_short(opts = {})
-    find(:all,
-         {:conditions => {:time7600 => nil,
-                         :time11200 => nil,
-                         :time15200 => nil},
-          :order => "time3600",
-          :include => :runner}.merge(opts))
-  end
+  scope :short, where({:time7600 => nil,
+                       :time11200 => nil,
+                       :time15200 => nil}).
+                order("time3600").
+                includes(:runner)
   
   # includes 11200. does it matter at all?
-  def self.find_one_lap(opts = {})
-    find(:all, 
-         {:conditions => "time7600 is not null and time15200 is null",
-          :order => "time7600"  ,
-          :include => :runner}.merge(opts))
-  end
+  scope :one_lap,
+        where("time7600 is not null and time15200 is null").
+        order("time7600").
+        includes(:runner)
   
-  def self.find_long(opts = {})
-    find(:all, {:conditions => "time15200 is not null",
-         :order => "time15200",
-         :include => :runner}.merge(opts))
-  end
+  scope :long,
+        where("time15200 is not null").
+        order("time15200").
+        includes(:runner)
+        
+  scope :for_distance, lambda {|length|
+          send(Run::DISTANCES[length.to_i])
+        }
   
-  def self.find_results_for(length, opts = {})
-    methods = {7600 => "one_lap",
-               15200 => "long",
-               3600 => "short"}
-    send("find_" + methods[length], opts)
-  end
+  scope :recent, 
+        order("events.event_date desc").
+        includes(:event)
   
   def self.find_recent
-    runs = find(:all, :include => :event, :order => "events.event_date desc")
+    runs = recent
     return {} if runs.blank?
     runs.group_by do |item|
       item.event.event_date.year
