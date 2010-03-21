@@ -2,6 +2,7 @@
 deploy.rb
 database.yml
 
+tmp/pids
 *~
 #tmp/**/*
 #vendor/gems
