@@ -1,9 +1,9 @@
 default_run_options[:pty] = true
-set :repository,  "git://gitorious.org/pyynikki/mainline.git"
+ssh_options[:forward_agent] = true
+set :repository,  "git@github.com:jarkko/pyynikki.git"
 set :scm, "git"
-set :scm_passphrase, ""
-set :user, "deployer"
-set :branch, "origin/master"
+set :user, "jarkko"
+set :branch, "master"
 set :deploy_via, :remote_cache
 
 set :application, "pyynikki"
@@ -20,13 +20,19 @@ role :web, "jlaine.net"
 role :db,  "jlaine.net", :primary => true
 
 namespace :deploy do
+  desc "Push local changes to server before deploying"
+  task :before_update_code do
+    system("rake git:push")
+  end
+  
   desc "Restart mongrel cluster"
   task :restart do
-    sudo "monit restart all -g pyynikki"
+    sudo "monit stop all -g pyynikki"
+    run "touch #{current_path}/tmp/restart.txt"
   end
   
   desc "Use correct database.yml file"
   task :after_symlink do
-    run "ln -s #{deploy_to}/shared/system/database.yml #{current_path}/shared/database.yml"
+    run "ln -s #{deploy_to}/shared/system/database.yml #{current_path}/config/database.yml"
   end
 end

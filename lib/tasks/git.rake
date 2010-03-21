@@ -6,6 +6,6 @@ namespace :git do
 
   desc "Push local git branch to remote svn"
   task :push do
-    system("git push")
+    system("git push origin master")
   end
 end
