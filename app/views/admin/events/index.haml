@@ -1,0 +1,12 @@
+%h1
+  Ylläpito
+  
+%p= link_to "Lisää uusi juoksu", new_admin_event_path
+
+#events
+  - for year in @years
+    %h2= year
+    
+    %ul
+      - for event in @events[year]
+        %li= link_to event.title, [:admin, event]

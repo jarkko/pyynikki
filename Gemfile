@@ -12,6 +12,7 @@ gem "xml-simple"
 # Rails has selected sqlite3.
 # gem "sqlite3-ruby", :require => "sqlite3"
 gem "mysql"
+gem "haml", "2.2.22"
 
 ## Bundle the gems you use:
 # gem "bj"

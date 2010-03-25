@@ -1,0 +1,14 @@
+%h1= @page_title
+
+#info
+  %dl
+    - if @event.temperature
+      %dt
+        = t 'app.common.temperature'
+        = temperature(@event)
+    
+    - if @event.weather
+      %dt        
+        =t 'app.common.circumstances'
+
+      %dd= @event.weather

@@ -1,0 +1,10 @@
+%h1= @page_title
+
+- semantic_form_for [:admin, @event] do |form|
+  = form.input :temperature
+  = form.input :weather
+  = form.input :event_date, :as => :string
+  
+  - form.buttons do
+    = form.commit_button "Lisää"
+  

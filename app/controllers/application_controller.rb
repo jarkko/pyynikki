@@ -34,6 +34,7 @@ class ApplicationController < ActionController::Base
       "events" => t('app.common.test_runs'),
       "runners" => t('app.common.runners')
     }
+    return unless @titles.keys.include?(params[:controller])
     # send("events_path") == eval("events_path")
     @breadcrumbs << {:url => send(params[:controller].gsub("/", "_") + "_path"),
                      :title => @titles[params[:controller]]}
