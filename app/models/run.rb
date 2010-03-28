@@ -8,7 +8,7 @@ class Run < ActiveRecord::Base
   
   validates_presence_of :runner_id, :event_id
   validates_associated :runner, :event
-  
+    
   #  3600 = short
   #  7600 = one_lap
   # 11200 = 3600 + 7600
@@ -104,6 +104,12 @@ class Run < ActiveRecord::Base
     "#{latest / 1000.0} km"
   end
   
+  [15200, 11200, 7600, 3600].each do |length|
+    define_method("time#{length}=") do |time|
+      write_attribute("time#{length}", sanitize_time(time))
+    end
+  end
+  
   private
   
     def formatted_result(time)
@@ -119,5 +125,15 @@ class Run < ActiveRecord::Base
         return length if send("time#{length}")
       end
       return nil
+    end
+    
+    def sanitize_time(time)
+      Rails.logger.debug("sanitizing #{time}")
+      if time.blank?
+        nil
+      else
+        mins, secs = time.to_s.split(/[\.\:]/)
+        mins.to_i * 60 + secs.to_i
+      end
     end
 end

@@ -1,0 +1,13 @@
+%h1
+  = t 'app.common.runners'
+#runners
+  %p
+    - @runners.keys.sort.each do |key|
+      = link_to key, "##{key}"
+  - @runners.keys.sort.each do |char|
+    %h2{ :id => char }
+      = char
+    %ul
+      - for runner in @runners[char]
+        %li{ :id => "runner_#{runner.id}" }
+          = link_to(runner.name, runner_path(runner))

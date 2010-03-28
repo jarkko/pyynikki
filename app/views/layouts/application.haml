@@ -6,21 +6,21 @@
       == #{t('app.common.pyynikki_test_run')}
       - if @page_title
         == &raquo; #{@page_title}
-    = stylesheet_link_tag "pyynikki"
     = stylesheet_link_tag "formtastic"
     = stylesheet_link_tag "formtastic_changes"
-    = stylesheet_link_tag 'compiled/grid.css', :media => 'screen, projection'
-    = stylesheet_link_tag 'compiled/text.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/pyynikki.css', :media => 'screen, projection'
     
     = javascript_include_tag 'prototype', 'lowpro', 'highlight'
+    = yield :javascript
   %body
     #contents
       #breadcrumbs
         = raw breadcrumbs
-      #flash
-        - if flash[:warning]
-          #warning
-            = flash[:warning]
+      - unless flash.empty?
+        #flash
+          - if flash[:warning]
+            #warning
+              = flash[:warning]
       = yield
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

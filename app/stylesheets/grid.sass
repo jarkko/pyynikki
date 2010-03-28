@@ -5,30 +5,84 @@
   Licensed under GPL and MIT.
 
 @import compass/utilities/general/reset.sass
+@import compass/utilities/general/clearfix.sass
 @import 960/grid.sass
 
 +global-reset
 
-// The following generates the default grids provided by the css version of 960.gs
-.container_12
-  +grid-system(12)
-
-.container_16
-  +grid-system(16)
-
 // But most compass users prefer to construct semantic layouts like so (two column layout with header and footer):
 
-!ninesixty_columns = 24
-.two-column
+!ninesixty_columns = 12
+
+#contents
   +grid-container
-  #header,
-  #footer,
-  #sidebar,
-  #main-content
-    +grid-unit-base
-  #header, #footer
-    +grid-width(24)
-  #sidebar
-    +grid-width(8)
-  #main-content
-    +grid-width(16)
+  +clearfix
+
+#breadcrumbs
+  +clearfix
+
+#breadcrumbs,
+h1
+  +grid(12,12)
+
+.event
+  +grid(2,12)
+  height: 20em
+ul li
+  margin-left: 15px
+
+#event, #runners
+  +grid(12,12)
+  +clearfix  
+#info
+  +grid(2,12)
+  +alpha
+#results
+  +grid(7,12)
+  .position
+    width: 30px
+  .name
+    width: 210px
+  .result
+    width: 80px
+  .splits
+    width: 140px
+#edit_results
+  +grid(10,12)
+  +omega
+  th
+    width: 60px
+    padding-right: 20px
+    &.name
+      width: 220px
+#add_new
+  +clearfix
+   & > li
+    +grid(1,12)
+  .name
+    +grid(3,12)
+    +alpha
+#photos
+  +grid(2,12)
+  +omega
+
+
+
+.grid-overlay
+  background: transparent url(/images/12_col.png) top left repeat-y
+
+
+  
+//  .two-column
+//    +grid-container
+//    #header,
+//    #footer,
+//    #sidebar,
+//    #main-content
+//      +grid-unit-base
+//    #header, #footer
+//      +grid-width(24)
+//    #sidebar
+//      +grid-width(8)
+//    #main-content
+//      +grid-width(16)

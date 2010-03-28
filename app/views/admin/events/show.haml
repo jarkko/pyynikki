@@ -1,14 +1,83 @@
+- content_for(:javascript) do
+  = javascript_include_tag("tablekit", "s2")
+
 %h1= @page_title
 
-#info
-  %dl
-    - if @event.temperature
-      %dt
-        = t 'app.common.temperature'
+#event
+  #info
+    %dl
+      - if @event.temperature
+        %dt
+          = t 'app.common.temperature'
         = temperature(@event)
     
-    - if @event.weather
-      %dt        
-        =t 'app.common.circumstances'
+      - if @event.weather
+        %dt        
+          =t 'app.common.circumstances'
 
-      %dd= @event.weather
+        %dd= @event.weather
+        
+  #edit_results
+  
+    - form_for [:admin, @event, Run.new] do |f|
+      %ul#add_new
+        %li.name
+          %div
+            = f.label :runner_id, "Nimi"
+          %div
+            = f.select :runner_id, Runner.order("last_name, first_name").all.collect {|r| [ r.name, r.id ] }
+            
+            :javascript
+              var names = $('run_runner_id').select('option').pluck('text');
+              var el = new Element('div');
+              var input = new Element('input', {type: 'text'});
+              el.insert({bottom: input})
+              $('run_runner_id').hide().insert({after: el});
+              var ac = new S2.UI.Autocompleter(el, {
+                choices: names
+              });
+        %li
+          %div
+            = f.label :time3600, "3600 m"
+          %div
+            = f.text_field :time3600, :size => 8
+        %li
+          %div
+            = f.label :time7600, "7600 m"
+          %div
+            = f.text_field :time7600, :size => 8
+        %li
+          %div
+            = f.label :time11200, "11200 m"
+          %div
+            = f.text_field :time11200, :size => 8
+        %li
+          %div
+            = f.label :time15200, "15200 m"
+          %div
+            = f.text_field :time15200, :size => 8
+        %li.add
+          = f.submit "Lisää"
+    
+    #result_list
+      %table.sortable
+        %tr
+          %th.name
+            Nimi
+          %th.text
+            3600 m
+          %th.text
+            7600 m
+          %th.text
+            11200 m
+          %th.text
+            15200 m
+          %th
+        - @event.runs.includes(:runner).each do |run|
+          %tr{:id => "run_#{run.to_param}"}
+            %td.name= run.runner.name
+            %td= run.result(3600)
+            %td= run.result(7600)
+            %td= run.result(11200)
+            %td= run.result(15200)
+            %td.edit= link_to "Muokkaa", [:edit, :admin, @event, run]

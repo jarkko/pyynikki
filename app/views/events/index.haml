@@ -1,0 +1,10 @@
+#events
+  %h1
+    = t 'app.common.test_runs'
+  - for year in @years
+    .event
+      %h2= year
+      %ul
+        - for event in @events[year]
+          %li
+            = link_to event.title, event

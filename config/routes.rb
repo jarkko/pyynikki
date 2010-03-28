@@ -53,14 +53,16 @@ Pyynikki::Application.routes.draw do |map|
   # See how all your routes lay out with "rake routes"
 
   root :to => "events#index"
-  
+  match "events" => redirect("/")
   resources :events, :runners, :user_sessions
   
   
   match 'admin' => 'admin/events#index', :as => :admin
   
   namespace :admin do
-    resources :events
+    resources :events do
+      resources :runs
+    end
   end
 
 

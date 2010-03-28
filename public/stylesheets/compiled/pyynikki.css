@@ -52,3 +52,60 @@ ul li { margin-left: 15px; }
 #photos { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 140px; margin-right: 0; }
 
 .grid-overlay { background: transparent url(/images/12_col.png) top left repeat-y; }
+
+/* 960 Grid System ~ Text CSS. Learn more ~ http://960.gs/ Licensed under GPL and MIT. */
+body { font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; }
+
+a:focus { outline: 1px dotted invert; }
+
+hr { border-color: #ccc; border-style: solid; border-width: 1px 0 0; clear: both; height: 0; }
+
+h1 { font-size: 25px; }
+
+h2 { font-size: 23px; }
+
+h3 { font-size: 21px; }
+
+h4 { font-size: 19px; }
+
+h5 { font-size: 17px; }
+
+h6 { font-size: 15px; }
+
+ol { list-style: decimal; }
+
+ul { list-style: square; }
+
+li { margin-left: 30px; }
+
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset { margin-bottom: 20px; }
+
+body { font-family: "Helvetica Neue", helvetica, arial, sans-serif; color: #333; font-size: 0.8em; background-color: #fefefe; }
+
+a { text-decoration: none; color: #333; border-bottom: dotted 1px #E48F34; }
+a:hover { border-bottom: 1px solid #FFBB79; background-color: #FFBB79; }
+
+dt { font-weight: bold; }
+
+dd { margin-left: 0; margin-bottom: 0.5em; }
+
+img { border: 0; }
+
+#info .minus { color: #1220FF; }
+#info .plus { color: #FF071D; }
+
+.splits { color: #999; }
+
+.highlight, tr:hover { background-color: #FCFF8B; }
+
+#photos { position: absolute; right: 25px; top: 0; list-style: none; }
+
+.roweven { background-color: #eee; }
+
+#edit_results tr .edit { visibility: hidden; }
+#edit_results tr:hover .edit { visibility: visible; }
+
+.ui-menu { list-style: none; margin: 0; padding: 0; width: 300px; position: absolute; background-color: #fff; }
+.ui-menu li { list-style: none; margin: 0; padding: 3px 10px; }
+.ui-menu li b { font-weight: bold; }
+.ui-menu li.ui-state-active { background: url(/images/button-primary-default-middle.png) repeat-x 50% 50%; color: #fff; }
