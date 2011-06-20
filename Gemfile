@@ -1,8 +1,7 @@
 # Edit this Gemfile to bundle your application's dependencies.
-source 'http://gemcutter.org'
+source 'http://rubygems.org'
 
-
-gem "rails", "3.0.0.beta"
+gem "rails", "3.0.9"
 gem "xml-simple"
 
 ## Bundle edge rails:
@@ -12,7 +11,10 @@ gem "xml-simple"
 # Rails has selected sqlite3.
 # gem "sqlite3-ruby", :require => "sqlite3"
 gem "mysql"
-gem "haml", "2.2.22"
+gem "haml", "~>3.1.2"
+gem "compass"
+gem "compass-960-plugin"
+gem "authlogic", "~>2.1.6"
 
 ## Bundle the gems you use:
 # gem "bj"
@@ -23,7 +25,7 @@ gem "haml", "2.2.22"
 ## Bundle gems used only in certain environments:
 # gem "rspec", :group => :test
 group :test do
-  gem "rspec", "2.0.0.beta.4"
-  gem "rspec-rails", "2.0.0.beta.4"
+  gem "rspec", "~>2.6.0"
+  gem "rspec-rails", "~>2.6.0"
   gem "webrat"
 end
