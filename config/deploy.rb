@@ -33,6 +33,5 @@ namespace :deploy do
   desc "Use correct database.yml file"
   task :after_symlink do
     run "ln -s #{deploy_to}/shared/system/database.yml #{current_path}/config/database.yml"
-    run "rvm rvmrc trust #{current_path}"
   end
 end
