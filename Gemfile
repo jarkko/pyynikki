@@ -11,7 +11,7 @@ gem "xml-simple"
 # Rails has selected sqlite3.
 # gem "sqlite3-ruby", :require => "sqlite3"
 gem "mysql"
-gem "haml", "~>3.1.2"
+gem "haml", "~>5.0.0"
 gem "compass"
 gem "compass-960-plugin"
 gem "authlogic", "~>2.1.6"
